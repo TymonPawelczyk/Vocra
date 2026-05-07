@@ -6,12 +6,1600 @@
       "id": "bi8Au",
       "x": 0,
       "y": 0,
-      "name": "Frame",
+      "name": "Desktop Landing Page",
       "clip": true,
-      "width": 800,
-      "height": 600,
-      "fill": "#FFFFFF",
-      "layout": "none"
+      "width": 1440,
+      "fill": "$bg",
+      "layout": "vertical",
+      "alignItems": "center",
+      "children": [
+        {
+          "type": "frame",
+          "id": "sCDbG",
+          "name": "Navbar",
+          "width": "fill_container",
+          "height": 72,
+          "fill": "$bg",
+          "stroke": {
+            "thickness": {
+              "bottom": 1
+            },
+            "fill": "$border"
+          },
+          "padding": [
+            16,
+            80
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "cva6l",
+              "name": "Logo",
+              "gap": 12,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "R8rJ7",
+                  "name": "logoIcon",
+                  "width": 24,
+                  "height": 24,
+                  "fill": "$accent",
+                  "cornerRadius": 6
+                },
+                {
+                  "type": "text",
+                  "id": "DBc2S",
+                  "name": "logoText",
+                  "fill": "$fg",
+                  "content": "Vocra",
+                  "fontFamily": "Inter Tight",
+                  "fontSize": 18,
+                  "fontWeight": "semibold"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "WgYn7",
+              "name": "Nav Links",
+              "gap": 24,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "XOe6x",
+                  "fill": "$fg-muted",
+                  "content": "Możliwości",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "tKj59",
+                  "fill": "$fg-muted",
+                  "content": "Cena",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "RejbK",
+                  "fill": "$fg-muted",
+                  "content": "FAQ",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "nTcem",
+                  "name": "Lang Switcher",
+                  "cornerRadius": 4,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$border"
+                  },
+                  "padding": [
+                    8,
+                    4
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "pAPKe",
+                      "fill": "$fg-muted",
+                      "content": "EN",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "O2KPa",
+              "name": "Nav CTA",
+              "fill": "$accent",
+              "cornerRadius": 6,
+              "padding": [
+                16,
+                8
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "tTK7Z",
+                  "fill": "#0a0a0b",
+                  "content": "Dołącz do listy",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "medium"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "nvpLx",
+          "name": "Hero",
+          "width": "fill_container",
+          "fill": "$bg",
+          "layout": "vertical",
+          "gap": 40,
+          "padding": [
+            120,
+            80
+          ],
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "NyQ9D",
+              "name": "Badge",
+              "fill": "#111114",
+              "cornerRadius": 999,
+              "stroke": {
+                "thickness": 1,
+                "fill": "$border"
+              },
+              "gap": 8,
+              "padding": [
+                12,
+                4
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "ellipse",
+                  "id": "qd9MN",
+                  "name": "badgeDot",
+                  "fill": "$accent",
+                  "width": 6,
+                  "height": 6
+                },
+                {
+                  "type": "text",
+                  "id": "kGLpY",
+                  "name": "badgeText",
+                  "fill": "$fg-muted",
+                  "content": "W budowie · pierwsza wersja niedługo",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "eewfB",
+              "name": "h1",
+              "fill": "$fg",
+              "textGrowth": "fixed-width",
+              "width": 800,
+              "content": "Napisy, które naprawdę rozumieją.",
+              "textAlign": "center",
+              "fontFamily": "Inter Tight",
+              "fontSize": 72,
+              "fontWeight": "semibold"
+            },
+            {
+              "type": "text",
+              "id": "qp7lH",
+              "name": "sub",
+              "fill": "$fg-muted",
+              "textGrowth": "fixed-width",
+              "width": 700,
+              "content": "Oglądaj dowolne wideo na YouTube po polsku. W czasie rzeczywistym. Lepiej niż automatyczne tłumaczenie YouTube.",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 20,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "yyLIw",
+              "name": "Hero CTA",
+              "fill": "$accent",
+              "cornerRadius": 8,
+              "gap": 8,
+              "padding": [
+                24,
+                12
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "sH9Mr",
+                  "fill": "#0a0a0b",
+                  "content": "Dołącz do listy oczekujących",
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "medium"
+                },
+                {
+                  "type": "icon_font",
+                  "id": "GoqvW",
+                  "width": 16,
+                  "height": 16,
+                  "iconFontName": "arrow-right",
+                  "iconFontFamily": "lucide",
+                  "fill": "#0a0a0b"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "MLpB5",
+              "name": "note",
+              "fill": "$fg-muted",
+              "content": "Wczesny dostęp · bez spamu · 1 mail co 2 tygodnie",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "WZXS1",
+          "name": "HowItWorks",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 64,
+          "padding": [
+            100,
+            0
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "uVVnW",
+              "fill": "#0f172a",
+              "content": "Jak to działa?",
+              "fontFamily": "Inter",
+              "fontSize": 40,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "frame",
+              "id": "xiKSS",
+              "name": "How-Grid",
+              "width": "fill_container",
+              "gap": 32,
+              "justifyContent": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "UYBTj",
+                  "name": "Step-1",
+                  "width": 320,
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 24,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#E2E8F0"
+                  },
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 32,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "PnYKX",
+                      "fill": "#DBEAFE",
+                      "content": "01",
+                      "fontFamily": "Inter",
+                      "fontSize": 48,
+                      "fontWeight": "800"
+                    },
+                    {
+                      "type": "text",
+                      "id": "y6mAFP",
+                      "fill": "#0f172a",
+                      "content": "Transkrypcja",
+                      "fontFamily": "Inter",
+                      "fontSize": 20,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "d0j36o",
+                      "fill": "#475569",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Groq Whisper błyskawicznie zamienia mowę na tekst, nawet przy trudnym akcencie.",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Fnuau",
+                  "name": "Step-2",
+                  "width": 320,
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 24,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#E2E8F0"
+                  },
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 32,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "O8BAY",
+                      "fill": "#DBEAFE",
+                      "content": "02",
+                      "fontFamily": "Inter",
+                      "fontSize": 48,
+                      "fontWeight": "800"
+                    },
+                    {
+                      "type": "text",
+                      "id": "uSFgn",
+                      "fill": "#0f172a",
+                      "content": "Tłumaczenie",
+                      "fontFamily": "Inter",
+                      "fontSize": 20,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "H6cE2I",
+                      "fill": "#475569",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Claude 4.5 analizuje kontekst techniczny i dobiera idealne polskie słownictwo.",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "bs9EB",
+                  "name": "Step-3",
+                  "width": 320,
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 24,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#E2E8F0"
+                  },
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 32,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "UpoMG",
+                      "fill": "#DBEAFE",
+                      "content": "03",
+                      "fontFamily": "Inter",
+                      "fontSize": 48,
+                      "fontWeight": "800"
+                    },
+                    {
+                      "type": "text",
+                      "id": "ilU0Z",
+                      "fill": "#0f172a",
+                      "content": "Dostarczenie",
+                      "fontFamily": "Inter",
+                      "fontSize": 20,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "g9IxR",
+                      "fill": "#475569",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Napisy trafiają bezpośrednio na Twój ekran z opóźnieniem mniejszym niż 3 sekundy.",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "ywvMW",
+          "name": "Features",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 48,
+          "padding": 80,
+          "children": [
+            {
+              "type": "frame",
+              "id": "rAHtN",
+              "name": "featHeadlines",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "jqnqA",
+                  "fill": "$fg",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Stworzone do oglądania, nie do nauki języka.",
+                  "fontFamily": "Inter",
+                  "fontSize": 48,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "text",
+                  "id": "itAkT",
+                  "fill": "$fg-muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Vocra to nie aplikacja dla uczących się. To narzędzie dla profesjonalistów, którzy chcą rozumieć treści w obcym języku — szybko i bez tarcia.",
+                  "fontFamily": "Inter",
+                  "fontSize": 18,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "u9dynI",
+              "name": "featGrid",
+              "clip": true,
+              "width": "fill_container",
+              "fill": "$border",
+              "cornerRadius": 12,
+              "layout": "vertical",
+              "gap": 1,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "TSgtm",
+                  "name": "row1",
+                  "width": "fill_container",
+                  "gap": 1,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "YBKeX",
+                      "name": "Feature-Card",
+                      "width": "fill_container",
+                      "fill": "$bg-soft",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "padding": 32,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "sLLhu",
+                          "fill": "$fg",
+                          "content": "W czasie rzeczywistym",
+                          "fontFamily": "Inter",
+                          "fontSize": 18,
+                          "fontWeight": "bold"
+                        },
+                        {
+                          "type": "text",
+                          "id": "D7xeA",
+                          "fill": "$fg-muted",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Opóźnienie poniżej 3 sekund. Działa też na live streamach.",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "fK9q0",
+                      "name": "Feature-Card",
+                      "width": "fill_container",
+                      "fill": "$bg-soft",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "padding": 32,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "IL1bj",
+                          "fill": "$fg",
+                          "content": "Lepsza jakość",
+                          "fontFamily": "Inter",
+                          "fontSize": 18,
+                          "fontWeight": "bold"
+                        },
+                        {
+                          "type": "text",
+                          "id": "i5S3WU",
+                          "fill": "$fg-muted",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Tłumaczenie wykonuje Claude. Żargon techniczny, kontekst, naturalny język.",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "lZU53",
+                      "name": "Feature-Card",
+                      "width": "fill_container",
+                      "fill": "$bg-soft",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "padding": 32,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "QBHV7",
+                          "fill": "$fg",
+                          "content": "Pełna prywatność",
+                          "fontFamily": "Inter",
+                          "fontSize": 18,
+                          "fontWeight": "bold"
+                        },
+                        {
+                          "type": "text",
+                          "id": "Nssk5",
+                          "fill": "$fg-muted",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Twoje audio nie jest zapisywane. Transkrypcja należy do ciebie.",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "pDKGl",
+                  "name": "row2",
+                  "width": "fill_container",
+                  "gap": 1,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "iE4Nj",
+                      "name": "Feature-Card",
+                      "width": "fill_container",
+                      "fill": "$bg-soft",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "padding": 32,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "ujvWE",
+                          "fill": "$fg",
+                          "content": "Lekka",
+                          "fontFamily": "Inter",
+                          "fontSize": 18,
+                          "fontWeight": "bold"
+                        },
+                        {
+                          "type": "text",
+                          "id": "naxTz",
+                          "fill": "$fg-muted",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Rozszerzenie do Chrome. Bez aplikacji desktopowej, bez VPN-ów, bez bałaganu.",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "D7xPI",
+                      "name": "Feature-Card",
+                      "width": "fill_container",
+                      "fill": "$bg-soft",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "padding": 32,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "PmUJq",
+                          "fill": "$fg",
+                          "content": "Pobierz transkrypcję",
+                          "fontFamily": "Inter",
+                          "fontSize": 18,
+                          "fontWeight": "bold"
+                        },
+                        {
+                          "type": "text",
+                          "id": "TEpls",
+                          "fill": "$fg-muted",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Eksport do .txt lub .srt. Idealne do notatek po wykładzie.",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "rHK2x",
+                      "name": "Feature-Card",
+                      "width": "fill_container",
+                      "fill": "$bg-soft",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "padding": 32,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "W6F5OS",
+                          "fill": "$fg",
+                          "content": "Wiele języków",
+                          "fontFamily": "Inter",
+                          "fontSize": 18,
+                          "fontWeight": "bold"
+                        },
+                        {
+                          "type": "text",
+                          "id": "dgvf7",
+                          "fill": "$fg-muted",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Start: EN/ES/FR/DE/IT → PL/ES/PT/DE/FR. Kolejne dodawane co tydzień.",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "amRjc",
+          "name": "Pricing",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 48,
+          "padding": 80,
+          "children": [
+            {
+              "type": "frame",
+              "id": "ZtKfX",
+              "name": "priceHeadlines",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "MM8p1",
+                  "fill": "$accent",
+                  "content": "CENA",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "text",
+                  "id": "kvO9R",
+                  "fill": "$fg",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Prosto. Tanio. Bez gier.",
+                  "fontFamily": "Inter",
+                  "fontSize": 48,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "text",
+                  "id": "BQbfy",
+                  "fill": "$fg-muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Free starczy do codziennej dawki. Pro zdejmuje wszystkie ograniczenia.",
+                  "fontFamily": "Inter",
+                  "fontSize": 18,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "R5hp0",
+              "name": "priceGrid",
+              "width": "fill_container",
+              "gap": 32,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "f2L5jk",
+                  "name": "Free-Card",
+                  "width": "fill_container",
+                  "fill": "$bg-soft",
+                  "cornerRadius": 16,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$border"
+                  },
+                  "layout": "vertical",
+                  "gap": 32,
+                  "padding": 40,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "neUqh",
+                      "fill": "$fg",
+                      "content": "Free",
+                      "fontFamily": "Inter",
+                      "fontSize": 24,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "HY1tJ",
+                      "name": "freePriceRow",
+                      "gap": 8,
+                      "alignItems": "end",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "M9ZV5",
+                          "fill": "$fg",
+                          "content": "0 zł",
+                          "fontFamily": "Inter",
+                          "fontSize": 48,
+                          "fontWeight": "bold"
+                        },
+                        {
+                          "type": "text",
+                          "id": "zayh2",
+                          "fill": "$fg-muted",
+                          "content": "na zawsze",
+                          "fontFamily": "Inter",
+                          "fontSize": 16,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Cj3oU",
+                      "name": "freeBullets",
+                      "layout": "vertical",
+                      "gap": 12,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "DqTDB",
+                          "fill": "$fg-muted",
+                          "content": "• 30 minut tłumaczenia dziennie",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "E2ta6",
+                          "fill": "$fg-muted",
+                          "content": "• 1 język docelowy",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "S96DvC",
+                          "fill": "$fg-muted",
+                          "content": "• Tylko YouTube",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "f4mqt",
+                          "fill": "$fg-muted",
+                          "content": "• Eksport transkrypcji ze znakiem wodnym",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "kP20L",
+                      "name": "freeBtn",
+                      "width": "fill_container",
+                      "cornerRadius": 8,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "$border"
+                      },
+                      "layout": "vertical",
+                      "padding": [
+                        12,
+                        0
+                      ],
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "FchFt",
+                          "fill": "$fg",
+                          "content": "Zacznij od Free",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "bold"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "J2eGUL",
+                  "name": "Pro-Card",
+                  "width": "fill_container",
+                  "fill": "#111114",
+                  "cornerRadius": 16,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$accent"
+                  },
+                  "layout": "vertical",
+                  "gap": 32,
+                  "padding": 40,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "Mu1IC",
+                      "layoutPosition": "absolute",
+                      "x": 32,
+                      "y": -14,
+                      "name": "Badge",
+                      "fill": "$accent",
+                      "cornerRadius": 20,
+                      "layout": "vertical",
+                      "padding": [
+                        4,
+                        12
+                      ],
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "Fbsu6",
+                          "fill": "#0a0a0b",
+                          "content": "Polecane",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "bold"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "m4q8mh",
+                      "fill": "$fg",
+                      "content": "Pro",
+                      "fontFamily": "Inter",
+                      "fontSize": 24,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Dpyx2",
+                      "name": "proPriceRow",
+                      "gap": 8,
+                      "alignItems": "end",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "dP69Y",
+                          "fill": "$fg",
+                          "content": "$5",
+                          "fontFamily": "Inter",
+                          "fontSize": 48,
+                          "fontWeight": "bold"
+                        },
+                        {
+                          "type": "text",
+                          "id": "a2SeC",
+                          "fill": "$fg-muted",
+                          "content": "/miesiąć",
+                          "fontFamily": "Inter",
+                          "fontSize": 16,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "ReFRb",
+                      "fill": "$accent",
+                      "content": "lub $45/rok — oszczędzasz $15",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Gl7fE",
+                      "name": "proBullets",
+                      "layout": "vertical",
+                      "gap": 12,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "GNqlR",
+                          "fill": "$fg",
+                          "content": "• Bez limitów minutowych",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "mLjG8",
+                          "fill": "$fg",
+                          "content": "• 3 języki docelowe",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "qpAvW",
+                          "fill": "$fg",
+                          "content": "• Tryb live stream",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "XQeMl",
+                          "fill": "$fg",
+                          "content": "• Pobieranie transkrypcji bez znaku wodnego",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "A0CFi",
+                      "name": "proBtn",
+                      "width": "fill_container",
+                      "fill": "$accent",
+                      "cornerRadius": 8,
+                      "layout": "vertical",
+                      "padding": [
+                        12,
+                        0
+                      ],
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "wdQzw",
+                          "fill": "#0a0a0b",
+                          "content": "Wybierz Pro",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "bold"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "NkXe4",
+              "fill": "$fg-muted",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Pro odblokowuje się dopiero po publicznym uruchomieniu (~60 dni). Dołącz do listy, żeby dostać kod -50% na pierwszy rok.",
+              "fontFamily": "Inter",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "H9FYT",
+          "name": "FAQ",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 48,
+          "padding": 80,
+          "children": [
+            {
+              "type": "text",
+              "id": "X6BUG",
+              "name": "faqTitle",
+              "fill": "$fg",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Najczęstsze pytania",
+              "fontFamily": "Inter",
+              "fontSize": 48,
+              "fontWeight": "semibold"
+            },
+            {
+              "type": "frame",
+              "id": "ddT9O",
+              "name": "FAQ-Container",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 8,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "OF30P",
+                  "name": "FAQ-Item-1",
+                  "width": "fill_container",
+                  "fill": "$bg-soft",
+                  "cornerRadius": 8,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$border"
+                  },
+                  "layout": "vertical",
+                  "padding": 24,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "nLjGu",
+                      "name": "i1Header",
+                      "width": "fill_container",
+                      "justifyContent": "space_between",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "vx8fx",
+                          "fill": "$fg",
+                          "content": "Czym Vocra różni się od automatycznego tłumaczenia YouTube?",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "medium"
+                        },
+                        {
+                          "type": "text",
+                          "id": "o2wsMB",
+                          "fill": "$fg-muted",
+                          "content": "+",
+                          "fontFamily": "Inter",
+                          "fontSize": 24,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "Q1B2aS",
+                      "fill": "$fg-muted",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Vocra używa LLM (Claude) do tłumaczenia, a nie starszego modelu YouTube. Efekt: zachowany kontekst, sensowne tłumaczenie żargonu, naturalne zdania. YouTube tłumaczy słowa. Vocra tłumaczy sens.",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Un9F1",
+                  "name": "FAQ-Item-2",
+                  "width": "fill_container",
+                  "fill": "$bg-soft",
+                  "cornerRadius": 8,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$border"
+                  },
+                  "layout": "vertical",
+                  "padding": 24,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "xQdIW",
+                      "name": "i2Header",
+                      "width": "fill_container",
+                      "justifyContent": "space_between",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "vacyI",
+                          "fill": "$fg",
+                          "content": "Czy działa na live streamach?",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "medium"
+                        },
+                        {
+                          "type": "text",
+                          "id": "urdnd",
+                          "fill": "$fg-muted",
+                          "content": "+",
+                          "fontFamily": "Inter",
+                          "fontSize": 24,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "HCoiE",
+                  "name": "FAQ-Item-3",
+                  "width": "fill_container",
+                  "fill": "$bg-soft",
+                  "cornerRadius": 8,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$border"
+                  },
+                  "layout": "vertical",
+                  "padding": 24,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "exmzh",
+                      "name": "i3Header",
+                      "width": "fill_container",
+                      "justifyContent": "space_between",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "BGeob",
+                          "fill": "$fg",
+                          "content": "Co z prywatnością?",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "medium"
+                        },
+                        {
+                          "type": "text",
+                          "id": "AHLOl",
+                          "fill": "$fg-muted",
+                          "content": "+",
+                          "fontFamily": "Inter",
+                          "fontSize": 24,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "tmOEE",
+                  "name": "FAQ-Item-4",
+                  "width": "fill_container",
+                  "fill": "$bg-soft",
+                  "cornerRadius": 8,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$border"
+                  },
+                  "layout": "vertical",
+                  "padding": 24,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "DYSwB",
+                      "name": "i4Header",
+                      "width": "fill_container",
+                      "justifyContent": "space_between",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "j4sCc",
+                          "fill": "$fg",
+                          "content": "Jakie języki są obsługiwane?",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "medium"
+                        },
+                        {
+                          "type": "text",
+                          "id": "EMJhl",
+                          "fill": "$fg-muted",
+                          "content": "+",
+                          "fontFamily": "Inter",
+                          "fontSize": 24,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "DzeOr",
+                  "name": "FAQ-Item-5",
+                  "width": "fill_container",
+                  "fill": "$bg-soft",
+                  "cornerRadius": 8,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$border"
+                  },
+                  "layout": "vertical",
+                  "padding": 24,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "R78T5",
+                      "name": "i5Header",
+                      "width": "fill_container",
+                      "justifyContent": "space_between",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "wmBe1",
+                          "fill": "$fg",
+                          "content": "Kiedy mogę pobrać Vocra?",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "medium"
+                        },
+                        {
+                          "type": "text",
+                          "id": "Wr0OQ",
+                          "fill": "$fg-muted",
+                          "content": "+",
+                          "fontFamily": "Inter",
+                          "fontSize": 24,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "o1P2o",
+                  "name": "FAQ-Item-6",
+                  "width": "fill_container",
+                  "fill": "$bg-soft",
+                  "cornerRadius": 8,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$border"
+                  },
+                  "layout": "vertical",
+                  "padding": 24,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "A5I4CC",
+                      "name": "i6Header",
+                      "width": "fill_container",
+                      "justifyContent": "space_between",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "SaCXa",
+                          "fill": "$fg",
+                          "content": "Czy mogę pomóc w testach?",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "medium"
+                        },
+                        {
+                          "type": "text",
+                          "id": "c5f37x",
+                          "fill": "$fg-muted",
+                          "content": "+",
+                          "fontFamily": "Inter",
+                          "fontSize": 24,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "QqNdP",
+          "name": "Waitlist",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 32,
+          "padding": 96,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "LWNKW",
+              "name": "Eyebrow",
+              "fill": "$accent",
+              "content": "WCZESNY DOSTĘP",
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "medium"
+            },
+            {
+              "type": "text",
+              "id": "Nbzx6",
+              "fill": "$fg",
+              "textGrowth": "fixed-width",
+              "width": 800,
+              "content": "Bądź pierwszy. Dostań -50% na pierwszy rok.",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 48,
+              "fontWeight": "semibold"
+            },
+            {
+              "type": "text",
+              "id": "e4CBrw",
+              "fill": "$fg-muted",
+              "textGrowth": "fixed-width",
+              "width": 600,
+              "content": "Pierwsze 200 osób z listy dostanie 50% rabatu na pierwszy rok Pro. Jeden mail co 2 tygodnie. Bez spamu.",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 18,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "DjFmA",
+              "name": "Waitlist-Form",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "rEE93",
+                  "name": "input",
+                  "width": 300,
+                  "fill": "$bg-soft",
+                  "cornerRadius": 8,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$border"
+                  },
+                  "padding": [
+                    12,
+                    16
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "U0xIVQ",
+                      "fill": "$fg-muted",
+                      "content": "twoj@mail.pl",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "dtsIY",
+                  "name": "Submit-Button",
+                  "fill": "$accent",
+                  "cornerRadius": 8,
+                  "padding": [
+                    12,
+                    24
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "rL5nk",
+                      "fill": "#0a0a0b",
+                      "content": "Zapisz się",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "semibold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "YYXlG",
+              "name": "Privacy-Text",
+              "fill": "$fg-muted",
+              "content": "Twój mail trafia tylko do nas. Możesz się wypisać jednym kliknięciem.",
+              "fontFamily": "Inter",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "s2bIrI",
+          "name": "Footer",
+          "width": "fill_container",
+          "stroke": {
+            "thickness": {
+              "top": 1
+            },
+            "fill": "$border"
+          },
+          "padding": [
+            48,
+            80
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "ovPrD",
+              "name": "Footer-Left",
+              "gap": 8,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 4,
+                  "id": "X98kX",
+                  "fill": "$accent",
+                  "width": 16,
+                  "height": 16
+                },
+                {
+                  "type": "text",
+                  "id": "JC5lt",
+                  "fill": "$fg",
+                  "content": "Vocra",
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "semibold"
+                },
+                {
+                  "type": "text",
+                  "id": "bvRhP",
+                  "fill": "$fg-muted",
+                  "content": "· Napisy, które naprawdę rozumieją.",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "pfzoA",
+              "name": "Footer-Right",
+              "gap": 16,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "fadJm",
+                  "fill": "$fg-muted",
+                  "content": "Kontakt",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "lN7nB",
+                  "fill": "$fg-muted",
+                  "content": "© 2026 Vocra. Wszelkie prawa zastrzeżone.",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
-  ]
+  ],
+  "variables": {
+    "accent": {
+      "type": "color",
+      "value": "#00d488"
+    },
+    "bg": {
+      "type": "color",
+      "value": "#0a0a0b"
+    },
+    "bg-soft": {
+      "type": "color",
+      "value": "#111114"
+    },
+    "border": {
+      "type": "color",
+      "value": "#1f1f23"
+    },
+    "fg": {
+      "type": "color",
+      "value": "#f5f5f5"
+    },
+    "fg-muted": {
+      "type": "color",
+      "value": "#a1a1aa"
+    }
+  }
 }
