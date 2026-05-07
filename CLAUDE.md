@@ -2,7 +2,11 @@
 
 ## What this is
 
-Vocra is a pre-MVP SaaS — a Chrome extension for real-time translated subtitles on YouTube. The repo currently contains only the **Phase 0 landing page**; the extension and backend do not yet exist.
+Vocra is a pre-MVP SaaS — **two platforms sharing the same backend**:
+1. **Chrome extension** — real-time translated subtitles overlaid on YouTube.
+2. **Web app with custom player** — standalone player at `vocra.dev/watch` (or similar) that streams YouTube video with translated subtitles, no extension required.
+
+The repo currently contains only the **Phase 0 landing page**; the extension, web player, and backend do not yet exist.
 
 **Locked product decisions** (do not change without explicit instruction):
 - **Beachhead: Polish-first.** Polish copy is primary at `/`, English at `/en`.
@@ -24,7 +28,7 @@ Vocra/
 └── CLAUDE.md (this file)
 ```
 
-Future apps: `apps/extension/` (WXT) and `apps/api/` (Cloudflare Workers). Use `apps/<name>/` pattern.
+Future apps: `apps/extension/` (WXT), `apps/web/` (web player — React or Next.js), and `apps/api/` (Cloudflare Workers). Use `apps/<name>/` pattern.
 
 ## Operational notes
 
