@@ -1,0 +1,27 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import Nav from "@/components/Nav.astro";
+import Hero from "@/components/Hero.astro";
+import Comparison from "@/components/Comparison.astro";
+import Features from "@/components/Features.astro";
+import Pricing from "@/components/Pricing.astro";
+import Faq from "@/components/Faq.astro";
+import Waitlist from "@/components/Waitlist.astro";
+import Footer from "@/components/Footer.astro";
+
+const title = "Vocra — Subtitles that actually understand";
+const description = "Watch any YouTube video in your language. Real-time translation. Better than YouTube's auto-translate.";
+---
+
+<BaseLayout title={title} description={description} lang="en">
+  <Nav lang="en" />
+  <main>
+    <Hero lang="en" />
+    <Comparison lang="en" />
+    <Features lang="en" />
+    <Pricing lang="en" />
+    <Faq lang="en" />
+    <Waitlist lang="en" />
+  </main>
+  <Footer lang="en" />
+</BaseLayout>

@@ -1,0 +1,87 @@
+---
+interface Props {
+  lang: "pl" | "en";
+}
+const { lang } = Astro.props;
+
+const t = {
+  pl: {
+    title: "Najczęstsze pytania",
+    items: [
+      {
+        q: "Czym Vocra różni się od automatycznego tłumaczenia YouTube?",
+        a: "Vocra używa LLM (Claude) do tłumaczenia, a nie starszego modelu YouTube. Efekt: zachowany kontekst, sensowne tłumaczenie żargonu, naturalne zdania. YouTube tłumaczy słowa. Vocra tłumaczy sens.",
+      },
+      {
+        q: "Czy działa na live streamach?",
+        a: "Tak. Tryb live ma minimalne opóźnienie (poniżej 3 sekund) i obsługuje zarówno premiery, jak i transmisje na żywo na YouTube.",
+      },
+      {
+        q: "Co z prywatnością?",
+        a: "Audio nie jest przechowywane. Transkrypcje są zaszyfrowane w trakcie przesyłania i należą tylko do ciebie. Możesz je usunąć w każdej chwili.",
+      },
+      {
+        q: "Kiedy mogę pobrać Vocra?",
+        a: "Zamknięta beta startuje w czerwcu 2026 dla osób z listy. Publiczne uruchomienie planowane na lipiec 2026.",
+      },
+      {
+        q: "Jakie języki są obsługiwane?",
+        a: "Na start: angielski, hiszpański, francuski, niemiecki, włoski → polski, hiszpański, portugalski, niemiecki, francuski. Kolejne (czeski, słowacki, ukraiński) dochodzą w drugiej fazie.",
+      },
+      {
+        q: "Czy mogę pomóc w testach?",
+        a: "Tak. Dołącz do listy oczekujących i napisz w odpowiedzi na mail powitalny — szukamy 50 osób do zamkniętej bety.",
+      },
+    ],
+  },
+  en: {
+    title: "Frequently asked questions",
+    items: [
+      {
+        q: "How is Vocra different from YouTube's auto-translate?",
+        a: "Vocra uses an LLM (Claude) for translation, not YouTube's older model. The result: preserved context, sensible jargon translation, natural phrasing. YouTube translates words. Vocra translates meaning.",
+      },
+      {
+        q: "Does it work on live streams?",
+        a: "Yes. Live mode has sub-3-second latency and supports both premieres and live YouTube broadcasts.",
+      },
+      {
+        q: "What about privacy?",
+        a: "Audio is never stored. Transcripts are encrypted in transit and belong to you alone. You can delete them anytime.",
+      },
+      {
+        q: "When can I install Vocra?",
+        a: "Closed beta starts June 2026 for waitlist members. Public launch is planned for July 2026.",
+      },
+      {
+        q: "Which languages are supported?",
+        a: "Launch set: English, Spanish, French, German, Italian → Polish, Spanish, Portuguese, German, French. More (Czech, Slovak, Ukrainian) follow in phase two.",
+      },
+      {
+        q: "Can I help test it?",
+        a: "Yes. Join the waitlist and reply to the welcome email — we're looking for 50 closed-beta testers.",
+      },
+    ],
+  },
+}[lang];
+---
+
+<section id="faq" class="border-b border-[var(--color-border)] px-6 py-20">
+  <div class="mx-auto max-w-3xl">
+    <h2 class="text-balance font-[var(--font-display)] text-3xl font-semibold tracking-tight md:text-5xl">
+      {t.title}
+    </h2>
+
+    <div class="mt-12 space-y-2">
+      {t.items.map((item) => (
+        <details class="group rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-soft)] p-6 open:bg-[color-mix(in_srgb,var(--color-accent)_3%,var(--color-bg-soft))]">
+          <summary class="flex cursor-pointer items-center justify-between font-medium">
+            {item.q}
+            <span class="ml-4 text-[var(--color-fg-muted)] transition-transform group-open:rotate-45">+</span>
+          </summary>
+          <p class="mt-4 text-[var(--color-fg-muted)]">{item.a}</p>
+        </details>
+      ))}
+    </div>
+  </div>
+</section>

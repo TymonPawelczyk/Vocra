@@ -1,0 +1,127 @@
+---
+interface Props {
+  lang: "pl" | "en";
+}
+const { lang } = Astro.props;
+
+const t = {
+  pl: {
+    eyebrow: "Cena",
+    title: "Prosto. Tanio. Bez gier.",
+    sub: "Free starczy do codziennej dawki. Pro zdejmuje wszystkie ograniczenia.",
+    free: {
+      name: "Free",
+      price: "0 zł",
+      sub: "na zawsze",
+      bullets: [
+        "30 minut tłumaczenia dziennie",
+        "1 język docelowy",
+        "Tylko YouTube",
+        "Eksport transkrypcji ze znakiem wodnym",
+      ],
+    },
+    pro: {
+      name: "Pro",
+      price: "$5",
+      sub: "/miesiąc",
+      yearly: "lub $45/rok — oszczędzasz $15",
+      bullets: [
+        "Bez limitów minutowych",
+        "3 języki docelowe",
+        "Tryb live stream",
+        "Pobieranie transkrypcji bez znaku wodnego",
+        "Priorytetowe wsparcie",
+      ],
+    },
+    note: "Pro odblokowuje się dopiero po publicznym uruchomieniu (~60 dni). Dołącz do listy, żeby dostać kod -50% na pierwszy rok.",
+    primary: "Wybierz Pro",
+    secondary: "Zacznij od Free",
+  },
+  en: {
+    eyebrow: "Pricing",
+    title: "Simple. Cheap. No games.",
+    sub: "Free covers daily use. Pro removes every limit.",
+    free: {
+      name: "Free",
+      price: "$0",
+      sub: "forever",
+      bullets: [
+        "30 minutes of translation per day",
+        "1 target language",
+        "YouTube only",
+        "Transcript export with watermark",
+      ],
+    },
+    pro: {
+      name: "Pro",
+      price: "$5",
+      sub: "/month",
+      yearly: "or $45/year — save $15",
+      bullets: [
+        "No minute limits",
+        "3 target languages",
+        "Live-stream mode",
+        "Watermark-free transcript download",
+        "Priority support",
+      ],
+    },
+    note: "Pro unlocks at public launch (~60 days). Join the waitlist to get -50% off your first year.",
+    primary: "Choose Pro",
+    secondary: "Start with Free",
+  },
+}[lang];
+---
+
+<section id="pricing" class="border-b border-[var(--color-border)] px-6 py-20">
+  <div class="mx-auto max-w-6xl">
+    <p class="text-sm font-medium uppercase tracking-wider text-[var(--color-accent)]">{t.eyebrow}</p>
+    <h2 class="mt-2 text-balance font-[var(--font-display)] text-3xl font-semibold tracking-tight md:text-5xl">
+      {t.title}
+    </h2>
+    <p class="mt-4 max-w-2xl text-[var(--color-fg-muted)]">{t.sub}</p>
+
+    <div class="mt-12 grid gap-6 md:grid-cols-2">
+      <div class="rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-soft)] p-8">
+        <h3 class="font-[var(--font-display)] text-xl font-semibold">{t.free.name}</h3>
+        <div class="mt-4 flex items-baseline gap-2">
+          <span class="text-5xl font-semibold">{t.free.price}</span>
+          <span class="text-[var(--color-fg-muted)]">{t.free.sub}</span>
+        </div>
+        <ul class="mt-6 space-y-3 text-sm">
+          {t.free.bullets.map((b) => (
+            <li class="flex gap-2">
+              <span class="mt-1 inline-block h-1 w-1 rounded-full bg-[var(--color-fg-muted)]"></span>
+              <span>{b}</span>
+            </li>
+          ))}
+        </ul>
+        <a href="#waitlist" class="mt-8 block rounded-md border border-[var(--color-border)] py-2 text-center text-sm hover:bg-[var(--color-border)]">
+          {t.secondary}
+        </a>
+      </div>
+
+      <div class="relative rounded-lg border border-[var(--color-accent)] bg-[color-mix(in_srgb,var(--color-accent)_4%,var(--color-bg-soft))] p-8">
+        <span class="absolute -top-3 left-8 rounded-full bg-[var(--color-accent)] px-3 py-1 text-xs font-medium text-[#0a0a0b]">{lang === "pl" ? "Polecane" : "Recommended"}</span>
+        <h3 class="font-[var(--font-display)] text-xl font-semibold">{t.pro.name}</h3>
+        <div class="mt-4 flex items-baseline gap-2">
+          <span class="text-5xl font-semibold">{t.pro.price}</span>
+          <span class="text-[var(--color-fg-muted)]">{t.pro.sub}</span>
+        </div>
+        <p class="mt-1 text-xs text-[var(--color-accent)]">{t.pro.yearly}</p>
+        <ul class="mt-6 space-y-3 text-sm">
+          {t.pro.bullets.map((b) => (
+            <li class="flex gap-2">
+              <span class="mt-1 inline-block h-1 w-1 rounded-full bg-[var(--color-accent)]"></span>
+              <span>{b}</span>
+            </li>
+          ))}
+        </ul>
+        <a href="#waitlist" class="mt-8 block rounded-md bg-[var(--color-accent)] py-2 text-center text-sm font-medium text-[#0a0a0b] hover:opacity-90">
+          {t.primary}
+        </a>
+      </div>
+    </div>
+
+    <p class="mt-6 text-xs text-[var(--color-fg-muted)]">{t.note}</p>
+  </div>
+</section>

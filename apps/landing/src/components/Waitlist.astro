@@ -1,0 +1,107 @@
+---
+interface Props {
+  lang: "pl" | "en";
+}
+const { lang } = Astro.props;
+
+const t = {
+  pl: {
+    eyebrow: "Wczesny dostęp",
+    title: "Bądź pierwszy. Dostań -50% na pierwszy rok.",
+    sub: "Pierwsze 200 osób z listy dostanie 50% rabatu na pierwszy rok Pro. Jeden mail co 2 tygodnie. Bez spamu.",
+    placeholder: "twoj@mail.pl",
+    button: "Zapisz się",
+    sending: "Zapisuję...",
+    success: "Jesteś na liście. Sprawdź skrzynkę za chwilę.",
+    error: "Coś poszło nie tak. Spróbuj ponownie.",
+    privacy: "Twój mail trafia tylko do nas. Możesz się wypisać jednym kliknięciem.",
+  },
+  en: {
+    eyebrow: "Early access",
+    title: "Be first. Get -50% off your first year.",
+    sub: "The first 200 people on the waitlist get 50% off the first year of Pro. One email every two weeks. No spam.",
+    placeholder: "you@email.com",
+    button: "Join the list",
+    sending: "Sending...",
+    success: "You're on the list. Check your inbox shortly.",
+    error: "Something went wrong. Please try again.",
+    privacy: "Your email goes only to us. Unsubscribe with one click anytime.",
+  },
+}[lang];
+---
+
+<section id="waitlist" class="px-6 py-24">
+  <div class="mx-auto max-w-2xl text-center">
+    <p class="text-sm font-medium uppercase tracking-wider text-[var(--color-accent)]">{t.eyebrow}</p>
+    <h2 class="mt-2 text-balance font-[var(--font-display)] text-3xl font-semibold tracking-tight md:text-5xl">
+      {t.title}
+    </h2>
+    <p class="mx-auto mt-4 max-w-xl text-[var(--color-fg-muted)]">{t.sub}</p>
+
+    <form
+      id="waitlist-form"
+      class="mx-auto mt-8 flex max-w-md flex-col gap-3 sm:flex-row"
+      data-lang={lang}
+    >
+      <input
+        type="email"
+        name="email"
+        required
+        placeholder={t.placeholder}
+        class="flex-1 rounded-md border border-[var(--color-border)] bg-[var(--color-bg-soft)] px-4 py-3 text-[var(--color-fg)] placeholder:text-[var(--color-fg-muted)] focus:border-[var(--color-accent)] focus:outline-none"
+      />
+      <button
+        type="submit"
+        class="rounded-md bg-[var(--color-accent)] px-6 py-3 font-medium text-[#0a0a0b] hover:opacity-90 disabled:opacity-50"
+      >
+        <span data-state="idle">{t.button}</span>
+        <span data-state="sending" class="hidden">{t.sending}</span>
+      </button>
+    </form>
+
+    <p id="waitlist-message" class="mt-4 hidden text-sm" data-success-text={t.success} data-error-text={t.error}></p>
+    <p class="mt-4 text-xs text-[var(--color-fg-muted)]">{t.privacy}</p>
+  </div>
+</section>
+
+<script>
+  const form = document.getElementById("waitlist-form") as HTMLFormElement | null;
+  const message = document.getElementById("waitlist-message") as HTMLParagraphElement | null;
+  if (form && message) {
+    const button = form.querySelector("button") as HTMLButtonElement;
+    const idleSpan = button.querySelector('[data-state="idle"]') as HTMLSpanElement;
+    const sendingSpan = button.querySelector('[data-state="sending"]') as HTMLSpanElement;
+
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const email = (form.elements.namedItem("email") as HTMLInputElement).value;
+      const lang = form.dataset.lang ?? "pl";
+
+      button.disabled = true;
+      idleSpan.classList.add("hidden");
+      sendingSpan.classList.remove("hidden");
+      message.classList.add("hidden");
+
+      try {
+        const res = await fetch("/api/waitlist", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ email, lang, source: "landing" }),
+        });
+        if (!res.ok) throw new Error("request failed");
+        message.textContent = message.dataset.successText ?? "";
+        message.classList.remove("hidden");
+        message.style.color = "var(--color-accent)";
+        form.reset();
+      } catch {
+        message.textContent = message.dataset.errorText ?? "";
+        message.classList.remove("hidden");
+        message.style.color = "#ef4444";
+      } finally {
+        button.disabled = false;
+        idleSpan.classList.remove("hidden");
+        sendingSpan.classList.add("hidden");
+      }
+    });
+  }
+</script>

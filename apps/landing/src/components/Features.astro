@@ -1,0 +1,69 @@
+---
+interface Props {
+  lang: "pl" | "en";
+}
+const { lang } = Astro.props;
+
+const t = {
+  pl: {
+    title: "Stworzone do oglądania, nie do nauki języka.",
+    sub: "Vocra to nie aplikacja dla uczących się. To narzędzie dla profesjonalistów, którzy chcą rozumieć treści w obcym języku — szybko i bez tarcia.",
+    items: [
+      {
+        h: "W czasie rzeczywistym",
+        p: "Opóźnienie poniżej 3 sekund. Działa też na live streamach.",
+      },
+      {
+        h: "Lepsza jakość",
+        p: "Tłumaczenie wykonuje Claude. Żargon techniczny, kontekst, naturalny język.",
+      },
+      {
+        h: "Pełna prywatność",
+        p: "Twoje audio nie jest zapisywane. Transkrypcja należy do ciebie.",
+      },
+      {
+        h: "Lekka",
+        p: "Rozszerzenie do Chrome. Bez aplikacji desktopowej, bez VPN-ów, bez bałaganu.",
+      },
+      {
+        h: "Pobierz transkrypcję",
+        p: "Eksport do .txt lub .srt. Idealne do notatek po wykładzie.",
+      },
+      {
+        h: "Wiele języków",
+        p: "Start: EN/ES/FR/DE/IT → PL/ES/PT/DE/FR. Kolejne dodawane co tydzień.",
+      },
+    ],
+  },
+  en: {
+    title: "Built for watching, not for learning a language.",
+    sub: "Vocra isn't an app for language learners. It's a tool for professionals who want to understand foreign-language content — fast and frictionless.",
+    items: [
+      { h: "Real-time", p: "Sub-3-second latency. Live streams included." },
+      { h: "Better quality", p: "Powered by Claude. Handles technical jargon, context, natural phrasing." },
+      { h: "Privacy-first", p: "Your audio is never stored. Transcripts are yours." },
+      { h: "Lightweight", p: "A Chrome extension. No desktop app, no VPN, no clutter." },
+      { h: "Download transcripts", p: "Export to .txt or .srt. Perfect for post-lecture notes." },
+      { h: "Multi-language", p: "Launch: EN/ES/FR/DE/IT → PL/ES/PT/DE/FR. More added weekly." },
+    ],
+  },
+}[lang];
+---
+
+<section class="border-b border-[var(--color-border)] px-6 py-20">
+  <div class="mx-auto max-w-6xl">
+    <h2 class="text-balance font-[var(--font-display)] text-3xl font-semibold tracking-tight md:text-5xl">
+      {t.title}
+    </h2>
+    <p class="mt-4 max-w-2xl text-[var(--color-fg-muted)]">{t.sub}</p>
+
+    <div class="mt-12 grid gap-px overflow-hidden rounded-lg border border-[var(--color-border)] bg-[var(--color-border)] sm:grid-cols-2 lg:grid-cols-3">
+      {t.items.map((item) => (
+        <div class="bg-[var(--color-bg-soft)] p-6">
+          <h3 class="font-[var(--font-display)] text-lg font-semibold">{item.h}</h3>
+          <p class="mt-2 text-sm text-[var(--color-fg-muted)]">{item.p}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

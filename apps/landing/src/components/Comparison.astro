@@ -1,0 +1,68 @@
+---
+interface Props {
+  lang: "pl" | "en";
+}
+const { lang } = Astro.props;
+
+const t = {
+  pl: {
+    eyebrow: "Porównanie",
+    title: "YouTube tłumaczy słowa. Vocra tłumaczy sens.",
+    sub: "Ten sam fragment angielskiego filmu o React Server Components. Po lewej automatyczne napisy YouTube. Po prawej Vocra.",
+    yt: "YouTube auto-translate",
+    vocra: "Vocra",
+    sourceLabel: "Oryginał (EN):",
+    source: "Server components let you push expensive work off the client and render closer to your data.",
+    ytText: "Komponenty serwera pozwalają wypchnąć drogą pracę z klienta i renderować bliżej twoich danych.",
+    vocraText: "Server Components pozwalają przenieść kosztowne operacje z klienta na serwer i renderować bliżej źródła danych.",
+    note: "Technologia: Vocra używa Claude i Whisper. YouTube używa własnego, starszego modelu tłumaczeń.",
+  },
+  en: {
+    eyebrow: "Side-by-side",
+    title: "YouTube translates words. Vocra translates meaning.",
+    sub: "Same clip from a React Server Components talk. Left: YouTube auto-translate. Right: Vocra.",
+    yt: "YouTube auto-translate",
+    vocra: "Vocra",
+    sourceLabel: "Original (EN):",
+    source: "Server components let you push expensive work off the client and render closer to your data.",
+    ytText: "Server components allow you to push expensive work off the client and render closer to your data. (literal, awkward in target language)",
+    vocraText: "Server Components let you move expensive work off the client and render close to where the data lives.",
+    note: "Vocra uses Claude + Whisper. YouTube uses an older in-house translation model.",
+  },
+}[lang];
+---
+
+<section id="features" class="border-b border-[var(--color-border)] px-6 py-20">
+  <div class="mx-auto max-w-6xl">
+    <p class="text-sm font-medium uppercase tracking-wider text-[var(--color-accent)]">{t.eyebrow}</p>
+    <h2 class="mt-2 text-balance font-[var(--font-display)] text-3xl font-semibold tracking-tight md:text-5xl">
+      {t.title}
+    </h2>
+    <p class="mt-4 max-w-2xl text-[var(--color-fg-muted)]">{t.sub}</p>
+
+    <div class="mt-10 rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-soft)] p-6">
+      <p class="text-xs uppercase tracking-wider text-[var(--color-fg-muted)]">{t.sourceLabel}</p>
+      <p class="mt-2 text-lg italic">"{t.source}"</p>
+    </div>
+
+    <div class="mt-6 grid gap-6 md:grid-cols-2">
+      <div class="rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-soft)] p-6">
+        <div class="flex items-center gap-2">
+          <div class="h-2 w-2 rounded-full bg-red-500"></div>
+          <p class="text-sm font-medium text-[var(--color-fg-muted)]">{t.yt}</p>
+        </div>
+        <p class="mt-4 text-lg">{t.ytText}</p>
+      </div>
+
+      <div class="rounded-lg border border-[var(--color-accent-soft)] bg-[color-mix(in_srgb,var(--color-accent)_5%,var(--color-bg-soft))] p-6">
+        <div class="flex items-center gap-2">
+          <div class="h-2 w-2 rounded-full bg-[var(--color-accent)]"></div>
+          <p class="text-sm font-medium text-[var(--color-accent)]">{t.vocra}</p>
+        </div>
+        <p class="mt-4 text-lg">{t.vocraText}</p>
+      </div>
+    </div>
+
+    <p class="mt-6 text-xs text-[var(--color-fg-muted)]">{t.note}</p>
+  </div>
+</section>

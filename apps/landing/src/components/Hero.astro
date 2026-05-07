@@ -1,0 +1,50 @@
+---
+interface Props {
+  lang: "pl" | "en";
+}
+const { lang } = Astro.props;
+
+const t = {
+  pl: {
+    badge: "W budowie · pierwsza wersja niedługo",
+    h1: "Napisy, które naprawdę rozumieją.",
+    sub: "Oglądaj dowolne wideo na YouTube po polsku. W czasie rzeczywistym. Lepiej niż automatyczne tłumaczenie YouTube.",
+    cta: "Dołącz do listy oczekujących",
+    note: "Wczesny dostęp · bez spamu · 1 mail co 2 tygodnie",
+  },
+  en: {
+    badge: "In progress · early access soon",
+    h1: "Subtitles that actually understand.",
+    sub: "Watch any YouTube video in your language. In real time. Better than YouTube's auto-translate.",
+    cta: "Join the waitlist",
+    note: "Early access · no spam · one email every 2 weeks",
+  },
+}[lang];
+---
+
+<section class="relative overflow-hidden border-b border-[var(--color-border)] px-6 py-20 md:py-28">
+  <div class="mx-auto max-w-4xl text-center">
+    <span class="inline-flex items-center gap-2 rounded-full border border-[var(--color-border)] bg-[var(--color-bg-soft)] px-3 py-1 text-xs text-[var(--color-fg-muted)]">
+      <span class="inline-block h-1.5 w-1.5 animate-pulse rounded-full bg-[var(--color-accent)]"></span>
+      {t.badge}
+    </span>
+
+    <h1 class="mt-6 text-balance font-[var(--font-display)] text-5xl font-semibold tracking-tight md:text-7xl">
+      {t.h1}
+    </h1>
+
+    <p class="mx-auto mt-6 max-w-2xl text-balance text-lg text-[var(--color-fg-muted)] md:text-xl">
+      {t.sub}
+    </p>
+
+    <a
+      href="#waitlist"
+      class="mt-10 inline-flex items-center gap-2 rounded-md bg-[var(--color-accent)] px-6 py-3 font-medium text-[#0a0a0b] hover:opacity-90"
+    >
+      {t.cta}
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+    </a>
+
+    <p class="mt-4 text-xs text-[var(--color-fg-muted)]">{t.note}</p>
+  </div>
+</section>
