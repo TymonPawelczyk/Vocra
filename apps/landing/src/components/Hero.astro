@@ -23,6 +23,10 @@ const t = {
 ---
 
 <section class="relative overflow-hidden border-b border-[var(--color-border)] px-6 py-20 md:py-28">
+  <div
+    aria-hidden="true"
+    class="pointer-events-none absolute inset-0 -z-10 opacity-40 [background-image:linear-gradient(to_right,var(--color-border)_1px,transparent_1px),linear-gradient(to_bottom,var(--color-border)_1px,transparent_1px)] [background-size:48px_48px] [mask-image:radial-gradient(ellipse_at_center,black,transparent_70%)]"
+  ></div>
   <div class="mx-auto max-w-4xl text-center">
     <span class="inline-flex items-center gap-2 rounded-full border border-[var(--color-border)] bg-[var(--color-bg-soft)] px-3 py-1 text-xs text-[var(--color-fg-muted)]">
       <span class="inline-block h-1.5 w-1.5 animate-pulse rounded-full bg-[var(--color-accent)]"></span>
@@ -42,7 +46,7 @@ const t = {
       class="mt-10 inline-flex items-center gap-2 rounded-md bg-[var(--color-accent)] px-6 py-3 font-medium text-[#0a0a0b] hover:opacity-90"
     >
       {t.cta}
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
     </a>
 
     <p class="mt-4 text-xs text-[var(--color-fg-muted)]">{t.note}</p>

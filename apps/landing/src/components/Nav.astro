@@ -26,21 +26,38 @@ const altPath = lang === "pl" ? "/en" : "/";
 ---
 
 <nav class="sticky top-0 z-40 border-b border-[var(--color-border)] bg-[color-mix(in_srgb,var(--color-bg)_85%,transparent)] backdrop-blur">
-  <div class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-    <a href={lang === "pl" ? "/" : "/en"} class="flex items-center gap-2 font-[var(--font-display)] text-lg font-semibold tracking-tight">
-      <span class="inline-block h-6 w-6 rounded-md bg-[var(--color-accent)]"></span>
-      Vocra
-    </a>
+  <details class="group [&[open]_summary_.icon-open]:hidden [&_summary_.icon-close]:hidden [&[open]_summary_.icon-close]:inline">
+    <summary class="mx-auto flex max-w-6xl cursor-pointer list-none items-center justify-between px-6 py-4 [&::-webkit-details-marker]:hidden">
+      <a href={lang === "pl" ? "/" : "/en"} class="flex items-center gap-2 font-[var(--font-display)] text-lg font-semibold tracking-tight">
+        <span class="inline-block h-6 w-6 rounded-md bg-[var(--color-accent)]"></span>
+        Vocra
+      </a>
 
-    <div class="hidden items-center gap-6 text-sm text-[var(--color-fg-muted)] md:flex">
-      <a href="#features" class="hover:text-[var(--color-fg)]">{t.features}</a>
-      <a href="#pricing" class="hover:text-[var(--color-fg)]">{t.pricing}</a>
-      <a href="#faq" class="hover:text-[var(--color-fg)]">{t.faq}</a>
-      <a href={altPath} class="rounded border border-[var(--color-border)] px-2 py-0.5 text-xs uppercase tracking-wider hover:text-[var(--color-fg)]">{altLang}</a>
+      <div class="hidden items-center gap-6 text-sm text-[var(--color-fg-muted)] md:flex">
+        <a href="#features" class="hover:text-[var(--color-fg)]">{t.features}</a>
+        <a href="#pricing" class="hover:text-[var(--color-fg)]">{t.pricing}</a>
+        <a href="#faq" class="hover:text-[var(--color-fg)]">{t.faq}</a>
+        <a href={altPath} class="rounded border border-[var(--color-border)] px-2 py-0.5 text-xs uppercase tracking-wider hover:text-[var(--color-fg)]">{altLang}</a>
+      </div>
+
+      <div class="flex items-center gap-2">
+        <a href="#waitlist" class="rounded-md bg-[var(--color-accent)] px-4 py-2 text-sm font-medium text-[#0a0a0b] hover:opacity-90">
+          {t.cta}
+        </a>
+        <span class="inline-flex h-9 w-9 items-center justify-center rounded-md border border-[var(--color-border)] text-[var(--color-fg-muted)] hover:text-[var(--color-fg)] md:hidden" aria-hidden="true">
+          <svg class="icon-open" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+          <svg class="icon-close" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        </span>
+      </div>
+    </summary>
+
+    <div class="border-t border-[var(--color-border)] bg-[var(--color-bg-soft)] md:hidden">
+      <div class="mx-auto flex max-w-6xl flex-col gap-1 px-6 py-3 text-sm text-[var(--color-fg-muted)]">
+        <a href="#features" class="rounded px-2 py-2 hover:bg-[var(--color-bg)] hover:text-[var(--color-fg)]">{t.features}</a>
+        <a href="#pricing" class="rounded px-2 py-2 hover:bg-[var(--color-bg)] hover:text-[var(--color-fg)]">{t.pricing}</a>
+        <a href="#faq" class="rounded px-2 py-2 hover:bg-[var(--color-bg)] hover:text-[var(--color-fg)]">{t.faq}</a>
+        <a href={altPath} class="rounded px-2 py-2 uppercase tracking-wider hover:bg-[var(--color-bg)] hover:text-[var(--color-fg)]">{altLang}</a>
+      </div>
     </div>
-
-    <a href="#waitlist" class="rounded-md bg-[var(--color-accent)] px-4 py-2 text-sm font-medium text-[#0a0a0b] hover:opacity-90">
-      {t.cta}
-    </a>
-  </div>
+  </details>
 </nav>
