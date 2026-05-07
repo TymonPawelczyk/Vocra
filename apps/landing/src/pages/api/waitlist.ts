@@ -1,6 +1,8 @@
 import type { APIRoute } from "astro";
 import { promises as fs } from "node:fs";
 import path from "node:path";
+import { createClient } from "@supabase/supabase-js";
+import { Resend } from "resend";
 
 export const prerender = false;
 
@@ -33,11 +35,6 @@ export const POST: APIRoute = async ({ request }) => {
     created_at: new Date().toISOString(),
   };
 
-  // STUB: append to local JSON file in dev. In production wire to Supabase + Resend.
-  // After deploy:
-  //   1. Insert into Supabase `waitlist` table
-  //   2. Send welcome email via Resend with -50% Pro discount code
-  //   3. Tag in PostHog for funnel tracking
   if (import.meta.env.DEV) {
     const dataDir = path.resolve(process.cwd(), ".data");
     await fs.mkdir(dataDir, { recursive: true });
@@ -45,8 +42,33 @@ export const POST: APIRoute = async ({ request }) => {
     await fs.appendFile(file, JSON.stringify(entry) + "\n");
     console.log("[waitlist]", entry);
   } else {
-    // Placeholder for production wiring
-    console.log("[waitlist:prod-stub]", entry);
+    const supabase = createClient(
+      import.meta.env.SUPABASE_URL,
+      import.meta.env.SUPABASE_SERVICE_KEY
+    );
+
+    const { error: dbError } = await supabase
+      .from("waitlist")
+      .insert({ email: entry.email, lang: entry.lang, source: entry.source });
+
+    // 23505 = unique_violation — duplicate signup, still return ok
+    if (dbError && dbError.code !== "23505") {
+      console.error("[waitlist] supabase error", dbError);
+      return new Response(JSON.stringify({ error: "db_error" }), { status: 500 });
+    }
+
+    if (!dbError) {
+      const resend = new Resend(import.meta.env.RESEND_API_KEY);
+      const isPl = entry.lang !== "en";
+      await resend.emails.send({
+        from: "Vocra <hello@vocra.dev>",
+        to: entry.email,
+        subject: isPl ? "Jesteś na liście Vocra!" : "You're on the Vocra waitlist!",
+        html: isPl
+          ? `<p>Hej,</p><p>Dziękujemy za dołączenie do listy oczekujących Vocra. Jako jedna z pierwszych 200 osób otrzymasz <strong>50% zniżki</strong> na pierwszy rok Pro.</p><p>Napisz do nas: hello@vocra.dev</p>`
+          : `<p>Hey,</p><p>Thanks for joining the Vocra waitlist. As one of the first 200 signups you'll get <strong>50% off</strong> your first year of Pro.</p><p>Reach us: hello@vocra.dev</p>`,
+      });
+    }
   }
 
   return new Response(JSON.stringify({ ok: true }), {
