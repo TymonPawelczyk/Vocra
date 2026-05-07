@@ -6,10 +6,10 @@
       "id": "bi8Au",
       "x": 0,
       "y": 0,
-      "name": "Desktop Landing Page",
+      "name": "Vocra Landing Page (Dark)",
       "clip": true,
       "width": 1440,
-      "fill": "$bg",
+      "fill": "#0a0a0a",
       "layout": "vertical",
       "alignItems": "center",
       "children": [
@@ -1570,6 +1570,2175 @@
                   "fontWeight": "normal"
                 }
               ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "CU6Td",
+          "name": "Navbar",
+          "width": "fill_container",
+          "height": 80,
+          "padding": [
+            0,
+            80
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "AzTRN",
+              "name": "Logo",
+              "gap": 12,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "S95J67",
+                  "name": "V-Icon",
+                  "width": 32,
+                  "height": 32,
+                  "fill": "#10b981",
+                  "cornerRadius": 6,
+                  "layout": "vertical",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "WVTLE",
+                      "fill": "#000000",
+                      "content": "V",
+                      "fontFamily": "Inter",
+                      "fontSize": 18,
+                      "fontWeight": "bold"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "BZJgd",
+                  "fill": "#FFFFFF",
+                  "content": "Vocra",
+                  "fontFamily": "Inter",
+                  "fontSize": 22,
+                  "fontWeight": "bold"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "C72W4c",
+              "name": "Menu",
+              "gap": 32,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "skCa9",
+                  "fill": "#9ca3af",
+                  "content": "Możliwości",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "rgJyt",
+                  "fill": "#9ca3af",
+                  "content": "Cena",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "urjiB",
+                  "fill": "#9ca3af",
+                  "content": "FAQ",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "W1lHyY",
+                  "fill": "#9ca3af",
+                  "content": "EN",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "UimyJ",
+              "name": "Nav-CTA",
+              "fill": "#10b981",
+              "cornerRadius": 8,
+              "layout": "vertical",
+              "padding": [
+                10,
+                20
+              ],
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "t0nYxN",
+                  "fill": "#000000",
+                  "content": "Dołącz do listy",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "600"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "TVfy6",
+          "name": "Hero",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 40,
+          "padding": [
+            120,
+            80
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "KYB3b",
+              "name": "Badge",
+              "fill": "#1f2937",
+              "cornerRadius": 100,
+              "gap": 8,
+              "padding": [
+                6,
+                16
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "ellipse",
+                  "id": "DRAX5",
+                  "fill": "#10b981",
+                  "width": 6,
+                  "height": 6
+                },
+                {
+                  "type": "text",
+                  "id": "A0QRNb",
+                  "fill": "#9ca3af",
+                  "content": "W budowie · pierwsza wersja niedługo",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "VXTUU",
+              "name": "Headline",
+              "fill": "#FFFFFF",
+              "textGrowth": "fixed-width",
+              "width": 900,
+              "content": "Napisy, które naprawdę rozumieją.",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 72,
+              "fontWeight": "800"
+            },
+            {
+              "type": "text",
+              "id": "GFQ7H",
+              "name": "Subheadline",
+              "fill": "#9ca3af",
+              "textGrowth": "fixed-width",
+              "width": 700,
+              "content": "Oglądaj dowolne wideo na YouTube po polsku. W czasie rzeczywistym. Lepiej niż automatyczne tłumaczenie YouTube.",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 22,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "M7sjG",
+              "name": "Hero-CTA",
+              "fill": "#10b981",
+              "cornerRadius": 12,
+              "layout": "vertical",
+              "padding": [
+                16,
+                32
+              ],
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "uvshB",
+                  "fill": "#000000",
+                  "content": "Dołącz do listy oczekujących →",
+                  "fontFamily": "Inter",
+                  "fontSize": 18,
+                  "fontWeight": "bold"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "iNhGo",
+              "fill": "#4b5563",
+              "content": "Wczesny dostęp · bez spamu · 1 mail co 2 tygodnie",
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "EFKXK",
+          "name": "Comparison",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 48,
+          "padding": [
+            100,
+            80
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "PuurK",
+              "fill": "#10b981",
+              "content": "PORÓWNANIE",
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "bold",
+              "letterSpacing": 1
+            },
+            {
+              "type": "text",
+              "id": "nXmQT",
+              "fill": "#FFFFFF",
+              "textGrowth": "fixed-width",
+              "width": 900,
+              "content": "YouTube tłumaczy słowa. Vocra tłumaczy sens.",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 48,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "frame",
+              "id": "Z2X05a",
+              "name": "Comp-Card",
+              "width": 1100,
+              "fill": "#111827",
+              "cornerRadius": 24,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#1f2937"
+              },
+              "layout": "vertical",
+              "gap": 32,
+              "padding": 40,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "c2hea",
+                  "name": "Original",
+                  "fill": "#030712",
+                  "cornerRadius": 12,
+                  "layout": "vertical",
+                  "gap": 12,
+                  "padding": 24,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "FRMjR",
+                      "fill": "#4b5563",
+                      "content": "ORYGINAŁ (EN):",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "WYS5a",
+                      "fill": "#9ca3af",
+                      "content": "\"Server components let you push expensive work off the client and render closer to your data.\"",
+                      "fontFamily": "Inter",
+                      "fontSize": 18,
+                      "fontWeight": "normal",
+                      "fontStyle": "italic"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "OH2hP",
+                  "name": "Sides",
+                  "width": "fill_container",
+                  "gap": 32,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "LCueI",
+                      "name": "YT-Side",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 16,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "Bk3Nw",
+                          "name": "ytLabel",
+                          "gap": 8,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "ellipse",
+                              "id": "H536wZ",
+                              "fill": "#ef4444",
+                              "width": 8,
+                              "height": 8
+                            },
+                            {
+                              "type": "text",
+                              "id": "WcpZs",
+                              "fill": "#9ca3af",
+                              "content": "YouTube auto-translate",
+                              "fontFamily": "Inter",
+                              "fontSize": 12,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "uxPDf",
+                          "fill": "#FFFFFF",
+                          "content": "Komponenty serwera pozwalają wypchnąć drogą pracę z klienta i renderować bliżej twoich danych.",
+                          "fontFamily": "Inter",
+                          "fontSize": 18,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Lk73I",
+                      "name": "Vocra-Side",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 16,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "kvwdw",
+                          "name": "vocraLabel",
+                          "gap": 8,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "ellipse",
+                              "id": "O1TEs",
+                              "fill": "#10b981",
+                              "width": 8,
+                              "height": 8
+                            },
+                            {
+                              "type": "text",
+                              "id": "roGey",
+                              "fill": "#10b981",
+                              "content": "Vocra",
+                              "fontFamily": "Inter",
+                              "fontSize": 12,
+                              "fontWeight": "bold"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "SrcjS",
+                          "fill": "#FFFFFF",
+                          "content": "Server Components pozwalają przenieść kosztowne operacje z klienta na serwer i renderować bliżej źródła danych.",
+                          "fontFamily": "Inter",
+                          "fontSize": 18,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "g2LaNr",
+          "name": "Features",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 64,
+          "padding": [
+            120,
+            80
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "pE9US",
+              "fill": "#FFFFFF",
+              "textGrowth": "fixed-width",
+              "width": 800,
+              "content": "Stworzone do oglądania, nie do nauki języka.",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 48,
+              "fontWeight": "800"
+            },
+            {
+              "type": "frame",
+              "id": "BvaA1",
+              "name": "Feature-Grid",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "CcUsg",
+                  "name": "row1",
+                  "width": "fill_container",
+                  "gap": 24,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "SfVJc",
+                      "name": "card1",
+                      "width": "fill_container",
+                      "fill": "#111827",
+                      "cornerRadius": 16,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "#1f2937"
+                      },
+                      "layout": "vertical",
+                      "gap": 12,
+                      "padding": 40,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "Y9vYxB",
+                          "fill": "#FFFFFF",
+                          "content": "W czasie rzeczywistym",
+                          "fontFamily": "Inter",
+                          "fontSize": 18,
+                          "fontWeight": "bold"
+                        },
+                        {
+                          "type": "text",
+                          "id": "iwmqy",
+                          "fill": "#9ca3af",
+                          "content": "Opóźnienie poniżej 3 sekund. Działa też na live streamach.",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "DOCJC",
+                      "name": "card2",
+                      "width": "fill_container",
+                      "fill": "#111827",
+                      "cornerRadius": 16,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "#1f2937"
+                      },
+                      "layout": "vertical",
+                      "gap": 12,
+                      "padding": 40,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "I6g6P",
+                          "fill": "#FFFFFF",
+                          "content": "Lepsza jakość",
+                          "fontFamily": "Inter",
+                          "fontSize": 18,
+                          "fontWeight": "bold"
+                        },
+                        {
+                          "type": "text",
+                          "id": "UPzRe",
+                          "fill": "#9ca3af",
+                          "content": "Tłumaczenie wykonuje Claude. Żargon techniczny, kontekst, naturalny język.",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "GxGBQ",
+                      "name": "card3",
+                      "width": "fill_container",
+                      "fill": "#111827",
+                      "cornerRadius": 16,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "#1f2937"
+                      },
+                      "layout": "vertical",
+                      "gap": 12,
+                      "padding": 40,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "oX08f",
+                          "fill": "#FFFFFF",
+                          "content": "Pełna prywatność",
+                          "fontFamily": "Inter",
+                          "fontSize": 18,
+                          "fontWeight": "bold"
+                        },
+                        {
+                          "type": "text",
+                          "id": "VZnuc",
+                          "fill": "#9ca3af",
+                          "content": "Twoje audio nie jest zapisywane. Transkrypcja należy do ciebie.",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "S8w4M0",
+                  "name": "row2",
+                  "width": "fill_container",
+                  "gap": 24,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "NsoMv",
+                      "name": "card4",
+                      "width": "fill_container",
+                      "fill": "#111827",
+                      "cornerRadius": 16,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "#1f2937"
+                      },
+                      "layout": "vertical",
+                      "gap": 12,
+                      "padding": 40,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "GpHVY",
+                          "fill": "#FFFFFF",
+                          "content": "Lekka",
+                          "fontFamily": "Inter",
+                          "fontSize": 18,
+                          "fontWeight": "bold"
+                        },
+                        {
+                          "type": "text",
+                          "id": "CmsHV",
+                          "fill": "#9ca3af",
+                          "content": "Rozszerzenie do Chrome. Bez aplikacji desktopowej, bez VPN-ów, bez bałaganu.",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "k0PoTm",
+                      "name": "card5",
+                      "width": "fill_container",
+                      "fill": "#111827",
+                      "cornerRadius": 16,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "#1f2937"
+                      },
+                      "layout": "vertical",
+                      "gap": 12,
+                      "padding": 40,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "SOWUI",
+                          "fill": "#FFFFFF",
+                          "content": "Pobierz transkrypcję",
+                          "fontFamily": "Inter",
+                          "fontSize": 18,
+                          "fontWeight": "bold"
+                        },
+                        {
+                          "type": "text",
+                          "id": "GltC0",
+                          "fill": "#9ca3af",
+                          "content": "Eksport do .txt lub .srt. Idealne do notatek po wykładzie.",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "ocABR",
+                      "name": "card6",
+                      "width": "fill_container",
+                      "fill": "#111827",
+                      "cornerRadius": 16,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "#1f2937"
+                      },
+                      "layout": "vertical",
+                      "gap": 12,
+                      "padding": 40,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "ZzI6b",
+                          "fill": "#FFFFFF",
+                          "content": "Wiele języków",
+                          "fontFamily": "Inter",
+                          "fontSize": 18,
+                          "fontWeight": "bold"
+                        },
+                        {
+                          "type": "text",
+                          "id": "aA54D",
+                          "fill": "#9ca3af",
+                          "content": "Start: EN/ES/FR/DE/IT → PL/ES/PT/DE/FR. Kolejne dodawane co tydzień.",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "c8H7Q",
+          "name": "Pricing",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 48,
+          "padding": [
+            100,
+            80
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "M4RU4",
+              "fill": "#10b981",
+              "content": "CENA",
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "text",
+              "id": "H7X4Zy",
+              "fill": "#FFFFFF",
+              "content": "Prosto. Tanio. Bez gier.",
+              "fontFamily": "Inter",
+              "fontSize": 48,
+              "fontWeight": "800"
+            },
+            {
+              "type": "frame",
+              "id": "tWeC4",
+              "name": "Pricing-Grid",
+              "gap": 32,
+              "justifyContent": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "Tl8pB",
+                  "name": "free",
+                  "width": 400,
+                  "fill": "#111827",
+                  "cornerRadius": 24,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#1f2937"
+                  },
+                  "layout": "vertical",
+                  "gap": 24,
+                  "padding": 48,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "r54kIw",
+                      "fill": "#FFFFFF",
+                      "content": "Free",
+                      "fontFamily": "Inter",
+                      "fontSize": 18,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "BKIar",
+                      "name": "fPrice",
+                      "gap": 4,
+                      "alignItems": "end",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "L3Vh7C",
+                          "fill": "#FFFFFF",
+                          "content": "0 zł",
+                          "fontFamily": "Inter",
+                          "fontSize": 48,
+                          "fontWeight": "bold"
+                        },
+                        {
+                          "type": "text",
+                          "id": "gSQSi",
+                          "fill": "#4b5563",
+                          "content": "na zawsze",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "ejIUu",
+                      "fill": "#9ca3af",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "• 30 minut tłumaczenia dziennie\n• 1 język docelowy\n• Tylko YouTube\n• Eksport transkrypcji ze znakiem wodnym",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Inter",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "C6NyDP",
+                  "name": "pro",
+                  "width": 400,
+                  "fill": "#111827",
+                  "cornerRadius": 24,
+                  "stroke": {
+                    "thickness": 2,
+                    "fill": "#10b981"
+                  },
+                  "layout": "vertical",
+                  "gap": 24,
+                  "padding": 48,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "sYohF",
+                      "layoutPosition": "absolute",
+                      "x": 30,
+                      "y": -14,
+                      "name": "badge2",
+                      "fill": "#064e3b",
+                      "cornerRadius": 100,
+                      "padding": [
+                        4,
+                        12
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "EbmFz",
+                          "fill": "#10b981",
+                          "content": "Polecane",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "bold"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "Q6bbx",
+                      "fill": "#FFFFFF",
+                      "content": "Pro",
+                      "fontFamily": "Inter",
+                      "fontSize": 18,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "c13Q5W",
+                      "name": "pPrice",
+                      "gap": 4,
+                      "alignItems": "end",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "kB6Vv",
+                          "fill": "#FFFFFF",
+                          "content": "$5",
+                          "fontFamily": "Inter",
+                          "fontSize": 48,
+                          "fontWeight": "bold"
+                        },
+                        {
+                          "type": "text",
+                          "id": "hmQfe",
+                          "fill": "#4b5563",
+                          "content": "/miesiąc",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "HrGA6",
+                      "fill": "#FFFFFF",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "• Więcej minut miesięcznie\n• Obsługa 15+ języków\n• Wyższa jakość tłumaczenia\n• Historia wszystkich sesji",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Inter",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Oc9w3",
+                      "name": "proBtn",
+                      "width": "fill_container",
+                      "fill": "#10b981",
+                      "cornerRadius": 12,
+                      "layout": "vertical",
+                      "padding": [
+                        16,
+                        0
+                      ],
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "wYF0Q",
+                          "fill": "#000000",
+                          "content": "Wybierz Pro",
+                          "fontFamily": "Inter",
+                          "fontSize": 16,
+                          "fontWeight": "bold"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "HfXIQ",
+                  "name": "creator",
+                  "width": 400,
+                  "fill": "#111827",
+                  "cornerRadius": 24,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#1f2937"
+                  },
+                  "layout": "vertical",
+                  "gap": 24,
+                  "padding": 48,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "T3xAGC",
+                      "fill": "#FFFFFF",
+                      "content": "Creator",
+                      "fontFamily": "Inter",
+                      "fontSize": 18,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "a8YLmG",
+                      "name": "cPrice",
+                      "gap": 4,
+                      "alignItems": "end",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "d859al",
+                          "fill": "#FFFFFF",
+                          "content": "$19",
+                          "fontFamily": "Inter",
+                          "fontSize": 48,
+                          "fontWeight": "bold"
+                        },
+                        {
+                          "type": "text",
+                          "id": "JG07N",
+                          "fill": "#4b5563",
+                          "content": "/miesiąc",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "JKIBl",
+                      "fill": "#9ca3af",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "• Wszystko w Pro\n• AI Dubbing (klonowanie głosu)\n• Eksport do wielu formatów\n• Tłumaczenie własnych plików wideo",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Inter",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "i9gF3",
+                  "name": "team",
+                  "width": 400,
+                  "fill": "#111827",
+                  "cornerRadius": 24,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#1f2937"
+                  },
+                  "layout": "vertical",
+                  "gap": 24,
+                  "padding": 48,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "g5MQQ",
+                      "fill": "#FFFFFF",
+                      "content": "API / Team",
+                      "fontFamily": "Inter",
+                      "fontSize": 18,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "PPQ5Y",
+                      "fill": "#FFFFFF",
+                      "content": "Usage-based",
+                      "fontFamily": "Inter",
+                      "fontSize": 32,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "rP7j2",
+                      "fill": "#9ca3af",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "• Rozliczenie za zużycie\n• Dostęp do API Vocra\n• Panel administracyjny dla firm\n• Support 24/7 SLA",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Inter",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "tcJQa",
+          "name": "FAQ",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 48,
+          "padding": [
+            100,
+            80
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "w5y1Eu",
+              "fill": "#FFFFFF",
+              "content": "Najczęstsze pytania",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 48,
+              "fontWeight": "800"
+            },
+            {
+              "type": "frame",
+              "id": "p139m",
+              "name": "FAQ-List",
+              "width": 800,
+              "layout": "vertical",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "o2ePNM",
+                  "name": "q1",
+                  "width": "fill_container",
+                  "fill": "#111827",
+                  "cornerRadius": 12,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#1f2937"
+                  },
+                  "padding": 24,
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "mEgC9",
+                      "fill": "#FFFFFF",
+                      "textGrowth": "fixed-width",
+                      "width": 600,
+                      "content": "Czym Vocra różni się od automatycznego tłumaczenia YouTube?",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "N2u6WT",
+                      "fill": "#9ca3af",
+                      "content": "+",
+                      "fontFamily": "Inter",
+                      "fontSize": 20,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "i6IdOe",
+                  "name": "q2",
+                  "width": "fill_container",
+                  "fill": "#111827",
+                  "cornerRadius": 12,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#1f2937"
+                  },
+                  "padding": 24,
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "yAXTt",
+                      "fill": "#FFFFFF",
+                      "textGrowth": "fixed-width",
+                      "width": 600,
+                      "content": "Czy działa na live streamach?",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "MJs6S",
+                      "fill": "#9ca3af",
+                      "content": "+",
+                      "fontFamily": "Inter",
+                      "fontSize": 20,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "u96qRQ",
+                  "name": "q3",
+                  "width": "fill_container",
+                  "fill": "#111827",
+                  "cornerRadius": 12,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#1f2937"
+                  },
+                  "padding": 24,
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "UCZ5L",
+                      "fill": "#FFFFFF",
+                      "textGrowth": "fixed-width",
+                      "width": 600,
+                      "content": "Co z prywatnością?",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "CB8bg",
+                      "fill": "#9ca3af",
+                      "content": "+",
+                      "fontFamily": "Inter",
+                      "fontSize": 20,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "n126RU",
+                  "name": "q4",
+                  "width": "fill_container",
+                  "fill": "#111827",
+                  "cornerRadius": 12,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#1f2937"
+                  },
+                  "padding": 24,
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "wwQGD",
+                      "fill": "#FFFFFF",
+                      "textGrowth": "fixed-width",
+                      "width": 600,
+                      "content": "Kiedy mogę pobrać Vocra?",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "uHBrb",
+                      "fill": "#9ca3af",
+                      "content": "+",
+                      "fontFamily": "Inter",
+                      "fontSize": 20,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "u6frLm",
+          "name": "Waitlist",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 32,
+          "padding": [
+            120,
+            80
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "Jr4hn",
+              "fill": "#10b981",
+              "content": "WCZESNY DOSTĘP",
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "bold",
+              "letterSpacing": 1
+            },
+            {
+              "type": "text",
+              "id": "GnCmj",
+              "fill": "#FFFFFF",
+              "textGrowth": "fixed-width",
+              "width": 800,
+              "content": "Bądź pierwszy. Dostań -50% na pierwszy rok.",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 48,
+              "fontWeight": "800"
+            },
+            {
+              "type": "text",
+              "id": "u9URV7",
+              "fill": "#9ca3af",
+              "textGrowth": "fixed-width",
+              "width": 700,
+              "content": "Pierwsze 200 osób z listy dostanie 50% rabatu na pierwszy rok Pro. Jeden mail co 2 tygodnie. Bez spamu.",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 18,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "ulIsc",
+              "name": "Form",
+              "gap": 16,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "i3DVtI",
+                  "name": "input",
+                  "width": 400,
+                  "height": 56,
+                  "fill": "#111827",
+                  "cornerRadius": 12,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#1f2937"
+                  },
+                  "layout": "vertical",
+                  "padding": [
+                    0,
+                    20
+                  ],
+                  "justifyContent": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "GczvK",
+                      "fill": "#4b5563",
+                      "content": "twój@mail.pl",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "K9m2f",
+                  "name": "submit",
+                  "fill": "#10b981",
+                  "cornerRadius": 12,
+                  "layout": "vertical",
+                  "padding": [
+                    16,
+                    32
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "oU5rI",
+                      "fill": "#000000",
+                      "content": "Zapisz się",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "bold"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "X6MJ3",
+          "name": "Footer",
+          "width": "fill_container",
+          "stroke": {
+            "align": "inside",
+            "thickness": 1,
+            "fill": "#1f2937"
+          },
+          "padding": [
+            60,
+            80
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "N0JkZH",
+              "name": "footLeft",
+              "gap": 12,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "ellipse",
+                  "id": "fT5LA",
+                  "fill": "#10b981",
+                  "width": 8,
+                  "height": 8
+                },
+                {
+                  "type": "text",
+                  "id": "T5Nbv",
+                  "fill": "#9ca3af",
+                  "content": "Vocra · Napisy, które naprawdę rozumieją.",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "I00wT",
+              "name": "footRight",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "H7X9k",
+                  "fill": "#9ca3af",
+                  "content": "Kontakt",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "cw8Br",
+                  "fill": "#4b5563",
+                  "content": "© 2026 Vocra. Wszelkie prawa zastrzeżone.",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "maqSJ",
+      "x": 1600,
+      "y": 0,
+      "name": "Design 2: Neon Asymmetric",
+      "width": 1440,
+      "fill": "#030014",
+      "layout": "vertical",
+      "alignItems": "center",
+      "children": [
+        {
+          "type": "frame",
+          "id": "eFb6B",
+          "name": "d2Nav",
+          "width": "fill_container",
+          "height": 80,
+          "padding": [
+            0,
+            80
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "wMaw5",
+              "name": "d2Logo",
+              "gap": 12,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "igeGd",
+                  "name": "d2Icon",
+                  "width": 32,
+                  "height": 32,
+                  "fill": "#8b5cf6",
+                  "cornerRadius": 8,
+                  "layout": "vertical",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "SRKlO",
+                      "fill": "#ffffff",
+                      "content": "V",
+                      "fontFamily": "Inter",
+                      "fontSize": 18,
+                      "fontWeight": "bold"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "Si1hJ",
+                  "fill": "#ffffff",
+                  "content": "Vocra",
+                  "fontFamily": "Inter",
+                  "fontSize": 22,
+                  "fontWeight": "bold"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "njzfE",
+              "name": "d2Menu",
+              "gap": 32,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "jR9F6",
+                  "fill": "#a1a1aa",
+                  "content": "Możliwości",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "zRxVx",
+              "name": "d2CTA",
+              "fill": "#1e1b4b",
+              "cornerRadius": 8,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#8b5cf6"
+              },
+              "padding": [
+                10,
+                20
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "oeJI3",
+                  "fill": "#d8b4fe",
+                  "content": "Zapisz się",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "OaHwq",
+          "name": "d2Hero",
+          "width": "fill_container",
+          "gap": 64,
+          "padding": [
+            120,
+            80
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "ymwnn",
+              "name": "d2HeroLeft",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 32,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "NSrGb",
+                  "name": "d2Badge",
+                  "fill": "#1e1b4b",
+                  "cornerRadius": 100,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#2e1065"
+                  },
+                  "padding": [
+                    6,
+                    16
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "lbxGy",
+                      "fill": "#c4b5fd",
+                      "content": "W budowie · pierwsza wersja niedługo",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "xgFVb",
+                  "fill": "#ffffff",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Napisy, które naprawdę rozumieją.",
+                  "fontFamily": "Inter",
+                  "fontSize": 64,
+                  "fontWeight": "800"
+                },
+                {
+                  "type": "frame",
+                  "id": "OIn6H",
+                  "name": "d2Form",
+                  "width": "fill_container",
+                  "gap": 12,
+                  "padding": [
+                    16,
+                    0,
+                    0,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "MP2Dg",
+                      "name": "d2Input",
+                      "width": 300,
+                      "height": 56,
+                      "cornerRadius": 12,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "#27272a"
+                      },
+                      "padding": [
+                        0,
+                        16
+                      ],
+                      "justifyContent": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "b3cJu",
+                          "fill": "#71717a",
+                          "content": "twój@mail.pl",
+                          "fontFamily": "Inter",
+                          "fontSize": 16,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "a9tBPE",
+                      "name": "d2Submit",
+                      "height": 56,
+                      "fill": "#8b5cf6",
+                      "cornerRadius": 12,
+                      "padding": [
+                        0,
+                        32
+                      ],
+                      "justifyContent": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "x3vON",
+                          "fill": "#ffffff",
+                          "content": "Dołącz",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "bold"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "VZuZs",
+              "name": "d2HeroRight",
+              "width": "fill_container",
+              "fill": "#09090b",
+              "cornerRadius": 24,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#27272a"
+              },
+              "layout": "vertical",
+              "gap": 24,
+              "padding": 40,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "x4887",
+                  "fill": "#ef4444",
+                  "content": "YouTube:",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "text",
+                  "id": "XboYc",
+                  "fill": "#71717a",
+                  "content": "\"Komponenty serwera pozwalają...\"",
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "dMqY2",
+                  "fill": "#8b5cf6",
+                  "content": "Vocra:",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "text",
+                  "id": "BbHop",
+                  "fill": "#ffffff",
+                  "content": "\"Server Components pozwalają przenieść...\"",
+                  "fontFamily": "Inter",
+                  "fontSize": 20,
+                  "fontWeight": "bold"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "Iocii",
+      "x": 3200,
+      "y": 0,
+      "name": "Design 3: Clean Light",
+      "width": 1440,
+      "fill": "#f8fafc",
+      "layout": "vertical",
+      "alignItems": "center",
+      "children": [
+        {
+          "type": "frame",
+          "id": "U623Ze",
+          "name": "d3Nav",
+          "width": "fill_container",
+          "height": 80,
+          "fill": "#ffffff",
+          "stroke": {
+            "thickness": 1,
+            "fill": "#e2e8f0"
+          },
+          "padding": [
+            0,
+            80
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "aOlAE",
+              "name": "d3Logo",
+              "gap": 12,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "b3qXz",
+                  "name": "d3Icon",
+                  "width": 32,
+                  "height": 32,
+                  "fill": "#0284c7",
+                  "cornerRadius": 8,
+                  "layout": "vertical",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "hKOWP",
+                      "fill": "#ffffff",
+                      "content": "V",
+                      "fontFamily": "Inter",
+                      "fontSize": 18,
+                      "fontWeight": "bold"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "A0tfn",
+                  "fill": "#0f172a",
+                  "content": "Vocra",
+                  "fontFamily": "Inter",
+                  "fontSize": 22,
+                  "fontWeight": "bold"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "ueWa2",
+              "name": "d3Menu",
+              "gap": 32,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Vy5Ii",
+                  "fill": "#64748b",
+                  "content": "Możliwości",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "IZhnm",
+              "name": "d3CTA",
+              "fill": "#0284c7",
+              "cornerRadius": 100,
+              "padding": [
+                10,
+                20
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "TULH6",
+                  "fill": "#ffffff",
+                  "content": "Zapisz się",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "600"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "tDZGq",
+          "name": "d3Hero",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 32,
+          "padding": [
+            140,
+            80
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "kUnnq",
+              "name": "d3Badge",
+              "fill": "#e0f2fe",
+              "cornerRadius": 100,
+              "padding": [
+                6,
+                16
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "MYTwR",
+                  "fill": "#0369a1",
+                  "content": "W budowie · pierwsza wersja niedługo",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "c39ndc",
+              "fill": "#0f172a",
+              "textGrowth": "fixed-width",
+              "width": 900,
+              "content": "Napisy, które naprawdę rozumieją.",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 72,
+              "fontWeight": "800"
+            },
+            {
+              "type": "text",
+              "id": "cQXe9",
+              "fill": "#475569",
+              "content": "Oglądaj dowolne wideo na YouTube po polsku. W czasie rzeczywistym.",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 22,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "h4eDO1",
+              "name": "d3Form",
+              "gap": 8,
+              "padding": [
+                24,
+                0,
+                0,
+                0
+              ],
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "N8upR",
+                  "name": "d3Input",
+                  "width": 320,
+                  "height": 60,
+                  "fill": "#ffffff",
+                  "cornerRadius": 100,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#cbd5e1"
+                  },
+                  "padding": [
+                    0,
+                    24
+                  ],
+                  "justifyContent": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "v8oIvP",
+                      "fill": "#94a3b8",
+                      "content": "twój@mail.pl",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "sxIar",
+                  "name": "d3Submit",
+                  "height": 60,
+                  "fill": "#0f172a",
+                  "cornerRadius": 100,
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#00000033",
+                    "offset": {
+                      "x": 0,
+                      "y": 4
+                    },
+                    "blur": 12
+                  },
+                  "padding": [
+                    0,
+                    32
+                  ],
+                  "justifyContent": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "tlMWu",
+                      "fill": "#ffffff",
+                      "content": "Zapisz się",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "ZvCjA",
+              "name": "d3Cards",
+              "gap": 24,
+              "padding": [
+                40,
+                0,
+                0,
+                0
+              ],
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "xSOfp",
+                  "name": "c1",
+                  "fill": "#ffffff",
+                  "cornerRadius": 16,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#e2e8f0"
+                  },
+                  "padding": 24,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "MksOS",
+                      "fill": "#0f172a",
+                      "content": "Na żywo",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "bold"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "F4Par",
+      "x": 0,
+      "y": 1500,
+      "name": "Vocra Logo Concepts",
+      "width": 1440,
+      "height": 600,
+      "fill": "#F8FAFC",
+      "gap": 80,
+      "padding": 80,
+      "justifyContent": "center",
+      "alignItems": "center",
+      "children": [
+        {
+          "type": "frame",
+          "id": "GJPtV",
+          "name": "Logo A: Bridge",
+          "width": 300,
+          "layout": "vertical",
+          "gap": 24,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "He1NG",
+              "name": "iconA",
+              "width": 120,
+              "height": 120,
+              "fill": "#10b981",
+              "cornerRadius": 24,
+              "layout": "vertical",
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "path",
+                  "id": "U9tqu",
+                  "geometry": "M10 30q20-20 40 0-20 20-40 0",
+                  "viewBox": [
+                    0,
+                    0,
+                    60,
+                    60
+                  ],
+                  "fill": "#000000",
+                  "width": 60,
+                  "height": 60
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "V6lvRf",
+              "fill": "#0f172a",
+              "content": "The Bridge",
+              "fontFamily": "Inter",
+              "fontSize": 18,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "text",
+              "id": "E6h5XJ",
+              "fill": "#64748b",
+              "content": "Symbolizuje połączenie między językami.",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "S743B",
+          "name": "Logo B: Pulse",
+          "width": 300,
+          "layout": "vertical",
+          "gap": 24,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "gp9VD",
+              "name": "iconB",
+              "width": 120,
+              "height": 120,
+              "fill": "#0f172a",
+              "cornerRadius": 60,
+              "stroke": {
+                "thickness": 4,
+                "fill": "#10b981"
+              },
+              "layout": "vertical",
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "path",
+                  "id": "TtjU0",
+                  "geometry": "M0 20l15 0 5-20 10 40 5-20 25 0",
+                  "viewBox": [
+                    0,
+                    0,
+                    60,
+                    40
+                  ],
+                  "width": 60,
+                  "height": 40,
+                  "stroke": {
+                    "thickness": 4,
+                    "cap": "round",
+                    "fill": "#10b981"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "XQyUx",
+              "fill": "#0f172a",
+              "content": "The Pulse",
+              "fontFamily": "Inter",
+              "fontSize": 18,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "text",
+              "id": "xSARX",
+              "fill": "#64748b",
+              "content": "Energia AI i przetwarzanie w czasie rzeczywistym.",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "CaVxL",
+          "name": "Logo C: Clarity",
+          "width": 300,
+          "layout": "vertical",
+          "gap": 24,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "K2JQw",
+              "name": "iconC",
+              "width": 120,
+              "height": 120,
+              "fill": {
+                "type": "gradient",
+                "gradientType": "linear",
+                "enabled": true,
+                "rotation": 0,
+                "size": {
+                  "height": 1
+                },
+                "colors": [
+                  {
+                    "color": "#10b981",
+                    "position": 0
+                  },
+                  {
+                    "color": "#3b82f6",
+                    "position": 1
+                  }
+                ]
+              },
+              "cornerRadius": 30,
+              "layout": "vertical",
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "sVKJ0",
+                  "fill": "#ffffff",
+                  "content": "V",
+                  "fontFamily": "Inter",
+                  "fontSize": 64,
+                  "fontWeight": "900"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "WS1Dy",
+              "fill": "#0f172a",
+              "content": "The Clarity",
+              "fontFamily": "Inter",
+              "fontSize": 18,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "text",
+              "id": "H8tKy",
+              "fill": "#64748b",
+              "content": "Ostre, profesjonalne i jednoznaczne.",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "normal"
             }
           ]
         }
