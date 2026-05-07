@@ -11,6 +11,10 @@ const t = {
     sub: "Oglądaj dowolne wideo na YouTube po polsku. W czasie rzeczywistym. Lepiej niż automatyczne tłumaczenie YouTube.",
     cta: "Dołącz do listy oczekujących",
     note: "Wczesny dostęp · bez spamu · 1 mail co 2 tygodnie",
+    mockupLive: "NA ŻYWO",
+    mockupSourceLang: "EN",
+    mockupTargetLang: "PL",
+    mockupSubtitle: "Server Components pozwalają przenieść kosztowne operacje bliżej źródła danych.",
   },
   en: {
     badge: "In progress · early access soon",
@@ -18,6 +22,10 @@ const t = {
     sub: "Watch any YouTube video in your language. In real time. Better than YouTube's auto-translate.",
     cta: "Join the waitlist",
     note: "Early access · no spam · one email every 2 weeks",
+    mockupLive: "LIVE",
+    mockupSourceLang: "EN",
+    mockupTargetLang: "PL",
+    mockupSubtitle: "Server Components let you move work closer to where the data lives.",
   },
 }[lang];
 ---
@@ -50,5 +58,42 @@ const t = {
     </a>
 
     <p class="mt-4 text-xs text-[var(--color-fg-muted)]">{t.note}</p>
+
+    <div
+      aria-hidden="true"
+      class="relative mx-auto mt-16 aspect-video w-full max-w-3xl overflow-hidden rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-soft)] shadow-[0_0_80px_-30px_var(--color-accent-soft)]"
+    >
+      <div class="flex items-center gap-2 border-b border-[var(--color-border)] bg-[#0a0a0b] px-4 py-2">
+        <span class="inline-block h-2 w-2 rounded-full bg-red-500"></span>
+        <span class="h-1.5 flex-1 rounded-full bg-[var(--color-border)]"></span>
+        <span class="h-1.5 w-16 rounded-full bg-[var(--color-border)]"></span>
+      </div>
+
+      <div class="relative h-[calc(100%-2.5rem)] bg-gradient-to-b from-zinc-800 to-zinc-950">
+        <span class="absolute left-3 top-3 inline-flex items-center gap-1.5 rounded-full bg-black/60 px-2 py-0.5 text-[10px] font-medium uppercase tracking-wider text-white backdrop-blur">
+          <span class="inline-block h-1.5 w-1.5 animate-pulse rounded-full bg-red-500"></span>
+          {t.mockupLive}
+        </span>
+
+        <span class="absolute right-3 top-3 inline-flex items-center gap-1 rounded-full border border-[var(--color-accent-soft)] bg-black/40 px-2 py-0.5 text-[10px] font-medium tracking-wider text-[var(--color-accent)] backdrop-blur">
+          {t.mockupSourceLang} → {t.mockupTargetLang}
+        </span>
+
+        <span class="absolute left-1/2 top-1/2 inline-flex h-14 w-14 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-white/10 backdrop-blur ring-1 ring-white/20">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M8 5v14l11-7z"/></svg>
+        </span>
+
+        <div class="absolute inset-x-0 bottom-3 px-4">
+          <div class="mx-auto flex max-w-[90%] items-start gap-2 rounded-md bg-black/65 px-3 py-2 text-left text-sm text-white backdrop-blur md:text-base">
+            <span class="mt-1.5 inline-block h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[var(--color-accent)]"></span>
+            <span class="leading-snug">{t.mockupSubtitle}</span>
+          </div>
+        </div>
+
+        <div class="absolute inset-x-0 bottom-0 h-0.5 bg-[var(--color-border)]">
+          <div class="h-full w-[35%] bg-[var(--color-accent)]"></div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>

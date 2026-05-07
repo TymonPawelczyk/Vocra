@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <radialGradient id="accentGlow" cx="50%" cy="-10%" r="80%">
+      <stop offset="0%" stop-color="#00d488" stop-opacity="0.18"/>
+      <stop offset="60%" stop-color="#00d488" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="bottomGlow" cx="50%" cy="110%" r="70%">
+      <stop offset="0%" stop-color="#00d488" stop-opacity="0.12"/>
+      <stop offset="55%" stop-color="#00d488" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="#0a0a0b"/>
+  <rect width="1200" height="630" fill="url(#accentGlow)"/>
+  <rect width="1200" height="630" fill="url(#bottomGlow)"/>
+
+  <g transform="translate(600, 200)">
+    <rect x="-44" y="-44" width="88" height="88" rx="16" fill="#00d488"/>
+  </g>
+
+  <text x="600" y="370" text-anchor="middle"
+        font-family="'Inter Tight', 'Inter', system-ui, sans-serif"
+        font-size="104" font-weight="700" letter-spacing="-3"
+        fill="#f5f5f5">Vocra</text>
+
+  <text x="600" y="450" text-anchor="middle"
+        font-family="'Inter', system-ui, sans-serif"
+        font-size="38" font-weight="500"
+        fill="#f5f5f5">Napisy, które naprawdę rozumieją.</text>
+
+  <text x="600" y="500" text-anchor="middle"
+        font-family="'Inter', system-ui, sans-serif"
+        font-size="24" font-weight="400"
+        fill="#a1a1aa">Tłumaczenie YouTube w czasie rzeczywistym · vocra.dev</text>
+
+  <rect x="0" y="626" width="1200" height="4" fill="#00d488"/>
+</svg>

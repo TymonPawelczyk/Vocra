@@ -1,0 +1,69 @@
+---
+interface Props {
+  lang: "pl" | "en";
+}
+const { lang } = Astro.props;
+
+const t = {
+  pl: {
+    eyebrow: "Jak to działa",
+    title: "Trzy kroki. Bez konta, bez konfiguracji.",
+    sub: "Vocra działa od pierwszego kliknięcia. Żadnego logowania, żadnych ustawień, żadnej krzywej uczenia się.",
+    steps: [
+      {
+        h: "Zainstaluj rozszerzenie",
+        p: "Dodaj Vocra do Chrome. Zajmuje to 10 sekund.",
+      },
+      {
+        h: "Włącz dowolne wideo",
+        p: "YouTube w obcym języku — angielski, hiszpański, niemiecki, francuski, włoski.",
+      },
+      {
+        h: "Oglądaj po polsku",
+        p: "Napisy pojawiają się w czasie rzeczywistym. Bez uczenia się, bez konfiguracji.",
+      },
+    ],
+  },
+  en: {
+    eyebrow: "How it works",
+    title: "Three steps. No account, no setup.",
+    sub: "Vocra works from the first click. No login, no settings, no learning curve.",
+    steps: [
+      {
+        h: "Install the extension",
+        p: "Add Vocra to Chrome. It takes 10 seconds.",
+      },
+      {
+        h: "Open any video",
+        p: "Any YouTube video in English, Spanish, German, French, or Italian.",
+      },
+      {
+        h: "Watch in your language",
+        p: "Subtitles appear in real time. No learning curve, no setup.",
+      },
+    ],
+  },
+}[lang];
+---
+
+<section id="how" class="border-b border-[var(--color-border)] px-6 py-20">
+  <div class="mx-auto max-w-6xl">
+    <p class="text-sm font-medium uppercase tracking-wider text-[var(--color-accent)]">{t.eyebrow}</p>
+    <h2 class="mt-2 text-balance font-[var(--font-display)] text-3xl font-semibold tracking-tight md:text-5xl">
+      {t.title}
+    </h2>
+    <p class="mt-4 max-w-2xl text-[var(--color-fg-muted)]">{t.sub}</p>
+
+    <div class="mt-12 grid gap-6 md:grid-cols-3">
+      {t.steps.map((step, i) => (
+        <div class="relative overflow-hidden rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-soft)] p-6">
+          <span class="absolute -top-2 right-4 select-none font-[var(--font-display)] text-7xl font-semibold text-[var(--color-accent)] opacity-15">
+            {String(i + 1).padStart(2, "0")}
+          </span>
+          <h3 class="relative font-[var(--font-display)] text-lg font-semibold">{step.h}</h3>
+          <p class="relative mt-2 text-sm text-[var(--color-fg-muted)]">{step.p}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

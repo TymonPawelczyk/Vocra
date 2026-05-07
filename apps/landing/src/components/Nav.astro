@@ -7,6 +7,7 @@ const { lang } = Astro.props;
 const t = {
   pl: {
     home: "Vocra",
+    how: "Jak to działa",
     features: "Możliwości",
     pricing: "Cena",
     faq: "FAQ",
@@ -14,6 +15,7 @@ const t = {
   },
   en: {
     home: "Vocra",
+    how: "How it works",
     features: "Features",
     pricing: "Pricing",
     faq: "FAQ",
@@ -34,6 +36,7 @@ const altPath = lang === "pl" ? "/en" : "/";
       </a>
 
       <div class="hidden items-center gap-6 text-sm text-[var(--color-fg-muted)] md:flex">
+        <a href="#how" class="hover:text-[var(--color-fg)]">{t.how}</a>
         <a href="#features" class="hover:text-[var(--color-fg)]">{t.features}</a>
         <a href="#pricing" class="hover:text-[var(--color-fg)]">{t.pricing}</a>
         <a href="#faq" class="hover:text-[var(--color-fg)]">{t.faq}</a>
@@ -53,6 +56,7 @@ const altPath = lang === "pl" ? "/en" : "/";
 
     <div class="border-t border-[var(--color-border)] bg-[var(--color-bg-soft)] md:hidden">
       <div class="mx-auto flex max-w-6xl flex-col gap-1 px-6 py-3 text-sm text-[var(--color-fg-muted)]">
+        <a href="#how" class="rounded px-2 py-2 hover:bg-[var(--color-bg)] hover:text-[var(--color-fg)]">{t.how}</a>
         <a href="#features" class="rounded px-2 py-2 hover:bg-[var(--color-bg)] hover:text-[var(--color-fg)]">{t.features}</a>
         <a href="#pricing" class="rounded px-2 py-2 hover:bg-[var(--color-bg)] hover:text-[var(--color-fg)]">{t.pricing}</a>
         <a href="#faq" class="rounded px-2 py-2 hover:bg-[var(--color-bg)] hover:text-[var(--color-fg)]">{t.faq}</a>
