@@ -14,6 +14,7 @@ This is structured as a monorepo (though currently mostly focused on the landing
 
 **Future additions planned:**
 - `apps/extension/`: The WXT-based Chrome extension.
+- `apps/web/`: The standalone web application featuring a custom video player.
 - `apps/api/`: Cloudflare Workers backend.
 - `packages/shared/`: Shared TypeScript types.
 
@@ -57,3 +58,4 @@ For local development of the waitlist API, you need to create a `.env.developmen
 - **Styling:** Tailwind CSS is used globally. The design style follows a "SaaS Modern / Clean Trust" aesthetic with a dark theme (`#0a0a0a` background, `#10b981` emerald accents).
 - **Deployment:** Deployment is managed via Vercel. Code pushed to the main branch is automatically deployed if connected, or can be deployed manually using the Vercel CLI (`npx vercel --prod`).
 - **Waitlist Logic:** The waitlist form submits to a server-rendered Astro endpoint (`src/pages/api/waitlist.ts`), which handles the Supabase insertion and Resend email notification securely on the server-side using the `SUPABASE_SERVICE_KEY`.
+rver-side using the `SUPABASE_SERVICE_KEY`.
