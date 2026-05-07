@@ -1,0 +1,17 @@
+node_modules/
+.DS_Store
+.env
+.env.local
+.env.*.local
+*.log
+dist/
+.astro/
+.vercel/
+.turbo/
+.cache/
+coverage/
+*.tsbuildinfo
+.idea/
+.vscode/
+!.vscode/settings.json
+!.vscode/extensions.json
