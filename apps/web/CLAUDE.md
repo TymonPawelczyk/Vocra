@@ -69,6 +69,11 @@ Put in `apps/web/.env` for dev. `.env*` is already gitignored at the repo root.
 3. **YouTube caption fetch fails** → UI shows a "MOCK CAPTIONS" amber badge plus an explanation note.
 4. **Toggle source** → "Show original" button reveals the source line under the translation.
 5. **Language switcher** in nav → swaps PL ↔ EN; the `?v=` param is preserved manually if you re-paste.
+6. **Share / Copy link** → puts `window.location.href` on the clipboard (`navigator.clipboard` with a `document.execCommand("copy")` fallback for non-HTTPS dev).
+7. **Download .srt** → builds an SRT in-memory from `cues` and triggers a `Blob` download as `vocra-<videoID>-<lang>.srt`.
+8. **Open on YouTube** → escape hatch to the original `youtube.com/watch?v=...` page in a new tab.
+9. **Waitlist CTA** → green panel below the player linking to `https://vocra.dev/#waitlist` (or `/en#waitlist` for the EN UI). The conversion path back to the marketing site.
+10. **Two-stage loading copy** → "Fetching captions…" for the first 1.2s, then switches to "Translating…" until the API responds. Single POST under the hood; the stage flip is a `setTimeout` cosmetic.
 
 The path back to real captions when scaling beyond the demo is the `apps/audio/` Fly.io service from the blueprint (yt-dlp + ffmpeg, not the in-process scraper).
 
@@ -80,6 +85,12 @@ The path back to real captions when scaling beyond the demo is the `apps/audio/`
 - `/api/cues/:videoID/:lang` separate read endpoint (warm path).
 - Live SSE stream. Currently the API returns the full cue list in one POST response.
 - Stripe.
+
+## Public assets
+
+- `public/favicon.svg` — same green-square logo as landing.
+- `public/og.svg` — source SVG for the social card. Polish-first: "Wklej link YouTube. Oglądaj po polsku.", emphasizes the no-install demo angle to differentiate from landing's brand-card OG.
+- `public/og.png` — 1200×630 rendered PNG. Render via `sharp` from a temp install (don't add `sharp` to this app's deps): `node -e "require('/tmp/og-render/node_modules/sharp')('apps/web/public/og.svg',{density:300}).resize(1200,630).png().toFile('apps/web/public/og.png')"`.
 
 ## Linking from landing
 
