@@ -1,0 +1,17 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import Nav from "@/components/Nav.astro";
+import PasteForm from "@/components/PasteForm.astro";
+import Footer from "@/components/Footer.astro";
+
+const title = "Vocra — Watch YouTube in your language, no extension";
+const description = "Paste a YouTube link and watch with subtitles in your language. No install. Vocra demo.";
+---
+
+<BaseLayout title={title} description={description} lang="en">
+  <Nav lang="en" />
+  <main>
+    <PasteForm lang="en" />
+  </main>
+  <Footer lang="en" />
+</BaseLayout>
