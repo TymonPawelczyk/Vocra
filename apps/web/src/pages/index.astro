@@ -1,0 +1,17 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import Nav from "@/components/Nav.astro";
+import PasteForm from "@/components/PasteForm.astro";
+import Footer from "@/components/Footer.astro";
+
+const title = "Vocra — Oglądaj YouTube po polsku, bez rozszerzenia";
+const description = "Wklej link YouTube i oglądaj z napisami w swoim języku. Bez instalacji. Demo Vocra.";
+---
+
+<BaseLayout title={title} description={description} lang="pl">
+  <Nav lang="pl" />
+  <main>
+    <PasteForm lang="pl" />
+  </main>
+  <Footer lang="pl" />
+</BaseLayout>

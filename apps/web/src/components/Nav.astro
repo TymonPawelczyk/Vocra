@@ -1,0 +1,39 @@
+---
+interface Props {
+  lang: "pl" | "en";
+}
+const { lang } = Astro.props;
+
+const t = {
+  pl: {
+    label: "Bez rozszerzenia",
+    backHome: "Strona główna",
+  },
+  en: {
+    label: "No extension required",
+    backHome: "Homepage",
+  },
+}[lang];
+
+const altLang = lang === "pl" ? "en" : "pl";
+const altPath = lang === "pl" ? "/en" : "/";
+const homeHref = lang === "pl" ? "/" : "/en";
+const marketingHref = lang === "pl" ? "https://vocra.dev/" : "https://vocra.dev/en";
+---
+
+<nav class="sticky top-0 z-40 border-b border-[var(--color-border)] bg-[color-mix(in_srgb,var(--color-bg)_85%,transparent)] backdrop-blur">
+  <div class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+    <a href={homeHref} class="flex items-center gap-2 font-[var(--font-display)] text-lg font-semibold tracking-tight">
+      <span class="inline-block h-6 w-6 rounded-md bg-[var(--color-accent)]"></span>
+      Vocra
+      <span class="ml-2 hidden rounded border border-[var(--color-border)] px-2 py-0.5 text-[10px] font-normal uppercase tracking-wider text-[var(--color-fg-muted)] md:inline">
+        {t.label}
+      </span>
+    </a>
+
+    <div class="flex items-center gap-3 text-sm text-[var(--color-fg-muted)]">
+      <a href={marketingHref} class="hidden hover:text-[var(--color-fg)] md:inline">{t.backHome}</a>
+      <a href={altPath} class="rounded border border-[var(--color-border)] px-2 py-0.5 text-xs uppercase tracking-wider hover:text-[var(--color-fg)]">{altLang}</a>
+    </div>
+  </div>
+</nav>
