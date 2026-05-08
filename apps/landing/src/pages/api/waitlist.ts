@@ -65,8 +65,8 @@ export const POST: APIRoute = async ({ request }) => {
         to: entry.email,
         subject: isPl ? "Jesteś na liście Vocra!" : "You're on the Vocra waitlist!",
         html: isPl
-          ? `<p>Hej,</p><p>Dziękujemy za dołączenie do listy oczekujących Vocra. Jako jedna z pierwszych 200 osób otrzymasz <strong>50% zniżki</strong> na pierwszy rok Pro.</p><p>Napisz do nas: hello@vocra.dev</p>`
-          : `<p>Hey,</p><p>Thanks for joining the Vocra waitlist. As one of the first 200 signups you'll get <strong>50% off</strong> your first year of Pro.</p><p>Reach us: hello@vocra.dev</p>`,
+          ? `<p>Hej,</p><p>Dziękujemy za dołączenie do listy oczekujących Vocra. Jako jedna z pierwszych 200 osób otrzymasz <strong>50% zniżki</strong> na pierwszy rok Pro.</p><p>Free to tłumaczenie tekstowe i napisy. Pro odblokowuje dubbing z głosem mówcy i funkcje premium.</p><p>Napisz do nas: hello@vocra.dev</p>`
+          : `<p>Hey,</p><p>Thanks for joining the Vocra waitlist. As one of the first 200 signups you'll get <strong>50% off</strong> your first year of Pro.</p><p>Free includes text translation and subtitles. Pro unlocks speaker-voice dubbing and premium features.</p><p>Reach us: hello@vocra.dev</p>`,
       });
     }
   }
